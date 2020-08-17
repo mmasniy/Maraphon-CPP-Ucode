@@ -9,6 +9,6 @@
          -Wextra
          -Wpedantic
  )
- set(SOURCE_EXE main.cpp)
+ set(SOURCE_EXE src/command.cpp src/validate.cpp main.cpp)
 
  add_executable(inventory ${SOURCE_EXE})
