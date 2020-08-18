@@ -3,7 +3,7 @@
 
 
 void Insert(std::vector<char>& inventory) {
-    char item;
+    std::string item;
     std::cin >> item;
     if (ValidateCin() || ValidateItem(item)) {
         return;
@@ -12,24 +12,24 @@ void Insert(std::vector<char>& inventory) {
         std::cerr << "Inventory is full.\n";
     }
     else {
-        inventory.push_back(item);
-        std::cout << item << " was inserted.\n";
+        inventory.push_back(item[0]);
+        std::cout << item[0] << " was inserted.\n";
     }
 }
 
 void Remove(std::vector<char>& inventory) {
-    char item;
+    std::string item;
     std::cin >> item;
     if (ValidateCin() || ValidateItem(item)) {
         return;
     }
-    if (count(inventory.begin(), inventory.end(), item) == 0) {
+    if (count(inventory.begin(), inventory.end(), item[0]) == 0) {
         std::cerr << "Invalid item.\n";
         return;
     }
     if (inventory.size() > 0) {
-        inventory.erase(find(inventory.begin(), inventory.end(), item));
-        std::cout << item << " was removed.\n";
+        inventory.erase(find(inventory.begin(), inventory.end(), item[0]));
+        std::cout << item[0] << " was removed.\n";
     }
 }
 

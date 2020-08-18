@@ -10,8 +10,9 @@ bool ValidateCin(void) {
     return 0;
 }
 
-bool ValidateItem(const char& it) {
-    if ((it != 'w' && it != 'f' && it != 'a' && it != 'p')) {
+bool ValidateItem(const std::string& it) {
+    if (it.size() != 1 || (it[0] != 'w' && it[0] != 'f'
+        && it[0] != 'a' && it[0] != 'p')) {
         std::cerr << "Invalid item.\n";
         return 1;
     }
