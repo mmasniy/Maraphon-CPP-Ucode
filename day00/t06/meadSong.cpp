@@ -19,10 +19,11 @@ void ZeroBottle() {
 void MeadSong(int number) {
     if (number > 1) {
         MoreBottle(number);
-    } else if (number == 1){
+    }
+    else if (number == 1){
         OneBottle(number);
     }
-    else {
+    else if (number == 0) {
         ZeroBottle();
     }
 }

@@ -10,6 +10,6 @@ set(SOURCE_LIB walletManager.cpp)
 
 add_library(walletManage STATIC ${SOURCE_LIB})
 
-add_executable(main ${SOURCE_EXE})
+add_executable(walletManager ${SOURCE_EXE})
 
-target_link_libraries(main walletManage)
+target_link_libraries(walletManager walletManage)
