@@ -37,3 +37,4 @@
 *build*
 !CMakeLists.txt
 t??/build/*
+.idea
