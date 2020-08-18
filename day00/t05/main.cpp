@@ -7,14 +7,14 @@ int main(int argc, char* argv[]) {
     else {
         auto name = argv[1];
         try {
-            auto level = std::stod(argv[2]);
+            auto level = std::stoi(argv[2]);
         }
         catch (std::exception &e) {
             std::cerr << "Invalid argument: " << argv[2] << std::endl;
             exit(EXIT_FAILURE);
         }
         try {
-            auto health = std::stod(argv[3]);
+            auto health = std::stof(argv[3]);
         }
         catch (std::exception &e) {
             std::cerr << "Invalid argument: " << argv[3] << std::endl;
