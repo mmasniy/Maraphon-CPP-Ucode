@@ -51,7 +51,9 @@ void OutInfo(std::forward_list<std::string>& list, char* argv) {
     std::ofstream fout(new_name);
     if (fout.is_open()) {
         list.remove_if ([](std::string name) {
-            return (name.find("c") != std::string::npos) || (name.find("b") != std::string::npos) || (name.find("l") != std::string::npos);
+            return (name.find("c") != std::string::npos)
+                    || (name.find("b") != std::string::npos)
+                    || (name.find("l") != std::string::npos);
         });
         std::replace_if(list.begin(), list.end(), [](std::string& name) {
             return name.size() < 4;}, "Short one");
