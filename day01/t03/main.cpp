@@ -7,10 +7,10 @@ int main() {
         rabbits.push_back(CreateRabbit());
     }
     while(rabbits.size() <= 1000 && rabbits.size() > 0) {
-        sleep(1);
-        IncreaseAgeRabbits(rabbits);
-        ReproductionRabbits(rabbits);
         PrintPopulationRabbit(rabbits);
+        sleep(1);
+        ReproductionRabbits(rabbits);
+        IncreaseAgeRabbits(rabbits);
         KillRabbits(rabbits);
     }
     return 0;
