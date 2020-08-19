@@ -16,3 +16,10 @@ struct Rabbit {
     bool isVampire;
     int age;
 };
+
+Rabbit CreateRabbit();
+void KillRabbits(std::list<Rabbit>& rabbits);
+std::vector<int> CountPopulation(std::list<Rabbit>& rabbits);
+void PrintPopulationRabbit(std::list<Rabbit>& rabbits);
+void IncreaseAgeRabbits(std::list<Rabbit>& rabbits);
+void ReproductionRabbits(std::list<Rabbit>& rabbits);
