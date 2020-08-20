@@ -4,6 +4,7 @@ int main(int argc, char** argv) {
     std::deque<Town> journey;
     if (argc == 1) {
         std::cerr << "usage: ./visitAll [[name,stamina,distance] ...]\n";
+        return 1;
     }
     try {
         if (GetAllTown(journey, argv, argc)) {

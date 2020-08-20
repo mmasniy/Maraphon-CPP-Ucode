@@ -20,6 +20,8 @@ struct Rabbit {
 Rabbit CreateRabbit();
 void KillRabbits(std::list<Rabbit>& rabbits);
 std::vector<int> CountPopulation(std::list<Rabbit>& rabbits);
+void BiteRabbits(std::list<Rabbit>& rabbits);
 void PrintPopulationRabbit(std::list<Rabbit>& rabbits);
 void IncreaseAgeRabbits(std::list<Rabbit>& rabbits);
 void ReproductionRabbits(std::list<Rabbit>& rabbits);
+

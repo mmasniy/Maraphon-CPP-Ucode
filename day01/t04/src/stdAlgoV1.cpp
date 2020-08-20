@@ -1,27 +1,29 @@
 #include "stdAlgoV1.h"
 
-bool CheckValidLine(std::string data) {
-    std::vector<std::string> lines;
-    std::stringstream in(data);
-    std::string line;
-    while(getline(in, line, ' ')) {
-        lines.push_back(line);
-    }
-    if (lines.size() == 1) {
-        return false;
-    }
-    else {
-        return true;
-    }
-}
+//bool CheckValidLine(std::string data) {
+//    std::vector<std::string> lines;
+//    std::stringstream in(data);
+//    std::string line;
+//    while(getline(in, line, ' ')) {
+//        if (line.size() != 0)
+//            lines.push_back(line);
+//    }
+//    if (lines.size() < 3) {
+//        return false;
+//    }
+//    else {
+//        return true;
+//    }
+//}
 
 int ReadFile (std::forward_list<std::string>& list, std::ifstream& fin) {
     std::string data;
     int size = 0;
     while (getline(fin,data, '\n')) {
-        if (CheckValidLine(data)) {
-            throw (std::invalid_argument(""));
-        }
+//        if (CheckValidLine(data)) {
+//            std::cerr << "1\n";
+//            throw (std::invalid_argument(""));
+//        }
         size++;
         list.push_front(data);
     }
