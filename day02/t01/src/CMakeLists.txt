@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(uniqueWords LANGUAGES CXX)
+project(mylib LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_EXTENSIONS OFF)
@@ -13,9 +13,5 @@ add_compile_options(
     -Wpedantic
 )
 
-set(SOURCE_EXE main.cpp)
-include_directories(src)
-
-add_subdirectory(src)
-add_executable(uniqueWords ${SOURCE_EXE})
-target_link_libraries(uniqueWords SOURCE_LIB)
+set(SOURCE_LIB myFunction.cpp countUniqueWords.cpp)
+add_library(SOURCE_LIB STATIC ${SOURCE_LIB})

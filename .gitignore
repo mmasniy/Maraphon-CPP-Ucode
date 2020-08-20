@@ -36,5 +36,9 @@
 *Store*
 *build*
 !CMakeLists.txt
+!src/CMakeLists.txt
 t??/build/*
 .idea
+t??/src/build/*
+cmake-build-debug
+library

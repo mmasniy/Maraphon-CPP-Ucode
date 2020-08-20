@@ -1,16 +1,21 @@
- cmake_minimum_required(VERSION 3.16)
- project(countUniqueWords)
- set(SOURCE_EXE main.cpp)
- set(CMAKE_CXX_STANDARD 17)
- set(CMAKE_CXX_STANDARD_REQUIRED YES)
- set(CMAKE_CXX_EXTENSIONS OFF)
- add_compile_options(
-         -Werror
-         -Wall
-         -Wextra
-         -Wpedantic
-         -Wno-unused-parameter
- )
- set(SOURCE_EXE main.cpp src/uniqueWords.cpp src/myFunction.cpp)
+cmake_minimum_required(VERSION 3.16)
+project(countUniqueWords LANGUAGES CXX)
 
- add_executable(countUniqueWords ${SOURCE_EXE})
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_CXX_STANDARD_REQUIRED YES)
+
+add_compile_options(
+        -pipe
+        -Wall
+        -Wextra
+        -Werror
+        -Wpedantic
+)
+
+set(SOURCE_EXE main.cpp)
+include_directories(src)
+
+add_subdirectory(src)
+add_executable(countUniqueWords ${SOURCE_EXE})
+target_link_libraries(countUniqueWords SOURCE_LIB)

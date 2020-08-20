@@ -7,14 +7,24 @@
 #include <utility>
 
 
-void CheckLineAndAdd(std::multimap<std::string, std::string>& library, std::ifstream& stream) {
+bool CheckLineAndAdd(std::multimap<std::string, std::string>& library, std::ifstream& stream) {
     std::string line;
+    int count_line = 0;
     while(getline(stream, line)) {
-         std::smatch result;
-         if (std::regex_match(line, result, std::regex(R"lit(\s*"([^"]+)"\s*:\s*"([^"]+)"\s*)lit"))) {
-             library.insert(std::make_pair(result.str(1), result.str(2)));
-         }
+        count_line++;
+        if (line.empty()) {
+            continue;
+        }
+        std::smatch result;
+        if (std::regex_match(line, result, std::regex(R"lit(\s*"([^"]+)"\s*:\s*"([^"]+)"\s*)lit"))) {
+            library.insert(std::make_pair(result.str(1), result.str(2)));
+        }
+        else {
+            std::cerr << "Line " << count_line << " is invalid" << std::endl;
+            return true;
+        }
     }
+    return false;
 }
 
 void PrintLibrary(std::multimap<std::string, std::string> &library, const std::string& author) {
@@ -32,7 +42,9 @@ int main(int argc, char** argv) {
     if (argc == 2) {
         std::ifstream fin(argv[1]);
         if (fin.is_open()) {
-            CheckLineAndAdd(library, fin);
+            if (CheckLineAndAdd(library, fin)) {
+                return 1;
+            }
             for (auto iter = library.begin(); iter != library.end(); iter = library.upper_bound(iter->first) ) {
                 PrintLibrary(library, iter->first);
             }
@@ -44,6 +56,5 @@ int main(int argc, char** argv) {
     else {
         std::cerr << "usage: ./tesLibrary [file_name]" << std::endl;
     }
-
     return 0;
 }

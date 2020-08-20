@@ -1,4 +1,4 @@
-#include "src/uniqueWords.h"
+#include "src/tesLibrary.h"
 #include <string>
 #include <map>
 
@@ -88,7 +88,7 @@ void ExecutionCommand(std::map<std::string, std::string>& books,
     }
 }
 
-int main(int argc, char** argv) {
+int main() {
     std::map<std::string, std::string> books;
     try {
         while(true) {
