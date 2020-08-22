@@ -34,11 +34,11 @@
 #*.txt
 *.dif
 *Store*
-*build*
-!CMakeLists.txt
+# *build*
+# !CMakeLists.txt
 !src/CMakeLists.txt
 t??/build/*
 .idea
 t??/src/build/*
-cmake-build-debug
+# cmake-build-debug
 #library
