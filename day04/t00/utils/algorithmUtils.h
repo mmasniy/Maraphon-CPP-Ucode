@@ -36,12 +36,22 @@ bool Modify(T& obj, U&& new_value) {
 //доделать
 template <class Collection, class T>
 void RemoveAll(Collection& c, const T& value) {
-    std::remove(std::begin(c), std::end(c), value);
+    auto it = std::remove(std::begin(c), std::end(c), value);
+    Collection front(std::distance(std::begin(c), it));
+    Collection back(std::distance(it, std::end(c)));
+    std::move(std::begin(c), it, std::begin(front));
+    std::move(it, std::end(c), std::begin(back));
+    c = std::move(front);
 }
 //доделать
 template <class Collection, class Pred>
 void RemoveAllIf(Collection& c, Pred&& predicate) {
-    std::remove_if(std::begin(c), std::end(c), predicate);
+    auto it = std::remove_if(std::begin(c), std::end(c), predicate);
+    Collection front(std::distance(std::begin(c), it));
+    Collection back(std::distance(it, std::end(c)));
+    std::move(std::begin(c), it, std::begin(front));
+    std::move(it, std::end(c), std::begin(back));
+    c = std::move(front);
 }
 
 template <class Collection, class T>
@@ -64,7 +74,7 @@ bool Contains(const Collection& c, const T& value) {
 
 template <class Collection, class Pred>
 bool ContainsIf(const Collection& c, Pred&& predicate) {
-    if (std::find(begin(c), end(c), predicate) != end(c)) {
+    if (std::find_if(begin(c), end(c), predicate) != end(c)) {
         return true;
     }
     return false;
@@ -119,12 +129,22 @@ void Sort(Collection& c, Comp&& comparator) {
 //доделать
 template <class Collection>
 void Unique(Collection& c) {
-    std::unique(begin(c), end(c));
+    auto it = std::unique(begin(c), end(c));
+    Collection front(std::distance(std::begin(c), it));
+    Collection back(std::distance(it, std::end(c)));
+    std::move(std::begin(c), it, std::begin(front));
+    std::move(it, std::end(c), std::begin(back));
+    c = std::move(front);
 }
 //доделать
 template <class Collection, class Pred>
 void Unique(Collection& c, Pred&& predicate) {
-    std::unique(begin(c), end(c), predicate);
+    auto it = std::unique(begin(c), end(c), predicate);
+    Collection front(std::distance(std::begin(c), it));
+    Collection back(std::distance(it, std::end(c)));
+    std::move(std::begin(c), it, std::begin(front));
+    std::move(it, std::end(c), std::begin(back));
+    c = std::move(front);
 }
 
 template <class Collection, class Pred>
@@ -134,18 +154,12 @@ void ForEach(Collection& c, Pred&& predicate) {
 
 template <class Collection, class T>
 int IndexOf(const Collection& c, const T& value) {
-    int index = (std::find(begin(c), end(c), value) - begin(c));
-    if (index == std::size(c)) {
-        return -1;
-    }
+    int index = std::distance(begin(c), std::find(begin(c), end(c), value));
     return index;
 }
 
 template <class Collection, class Pred>
 int IndexOfIf(const Collection& c, Pred&& predicate) {
-    int index = (FindIf(c, predicate) - begin(c));
-    if (index == std::size(c)) {
-        return -1;
-    }
+    int index = std::distance(begin(c), std::find_if(begin(c), end(c), predicate));
     return index;
 }
