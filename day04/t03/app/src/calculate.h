@@ -1,14 +1,8 @@
 #pragma once
+#include "containeVariable.h"
 #include <iostream>
 #include <map>
 
-
-class ContaineVarible {
-
-
-    private:
-    std::map<std::string, int> container;
-};
 
 class Calculate {
     public:
@@ -21,6 +15,6 @@ class Calculate {
     };
     private:
     int operand1, operand2;
-    ContaineVarible table;
+//    ContaineVarible table;
     Operation operation;
 };
