@@ -171,6 +171,33 @@ src/fast:
 	cd /Users/snikolayen/mm/race00/cmake-build-debug && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/build
 .PHONY : src/fast
 
+menu.o: menu.cpp.o
+
+.PHONY : menu.o
+
+# target to build an object file
+menu.cpp.o:
+	cd /Users/snikolayen/mm/race00/cmake-build-debug && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/menu.cpp.o
+.PHONY : menu.cpp.o
+
+menu.i: menu.cpp.i
+
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.cpp.i:
+	cd /Users/snikolayen/mm/race00/cmake-build-debug && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/menu.cpp.i
+.PHONY : menu.cpp.i
+
+menu.s: menu.cpp.s
+
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.cpp.s:
+	cd /Users/snikolayen/mm/race00/cmake-build-debug && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/menu.cpp.s
+.PHONY : menu.cpp.s
+
 snake.o: snake.cpp.o
 
 .PHONY : snake.o
@@ -211,6 +238,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... src"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
 	@echo "... snake.o"
 	@echo "... snake.i"
 	@echo "... snake.s"

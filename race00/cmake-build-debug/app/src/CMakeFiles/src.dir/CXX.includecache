@@ -28,6 +28,32 @@ SFML/Graphics/RenderStates.hpp
 SFML/Config.hpp
 -
 
+../3dparty/sfml/include/SFML/Graphics/Font.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Glyph.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+SFML/System/Vector2.hpp
+-
+SFML/System/String.hpp
+-
+map
+-
+string
+-
+vector
+-
+
+../3dparty/sfml/include/SFML/Graphics/Glyph.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+
 ../3dparty/sfml/include/SFML/Graphics/Image.hpp
 SFML/Graphics/Export.hpp
 -
@@ -51,12 +77,6 @@ SFML/Graphics/Rect.inl
 -
 
 ../3dparty/sfml/include/SFML/Graphics/Rect.inl
-
-../3dparty/sfml/include/SFML/Graphics/RectangleShape.hpp
-SFML/Graphics/Export.hpp
--
-SFML/Graphics/Shape.hpp
--
 
 ../3dparty/sfml/include/SFML/Graphics/RenderStates.hpp
 SFML/Graphics/Export.hpp
@@ -100,16 +120,44 @@ SFML/Window/Window.hpp
 string
 -
 
-../3dparty/sfml/include/SFML/Graphics/Shape.hpp
+../3dparty/sfml/include/SFML/Graphics/Sprite.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Drawable.hpp
 -
 SFML/Graphics/Transformable.hpp
 -
+SFML/Graphics/Vertex.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+
+../3dparty/sfml/include/SFML/Graphics/Text.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+SFML/Graphics/Transformable.hpp
+-
+SFML/Graphics/Font.hpp
+-
+SFML/Graphics/Rect.hpp
+-
 SFML/Graphics/VertexArray.hpp
 -
-SFML/System/Vector2.hpp
+SFML/System/String.hpp
+-
+string
+-
+vector
+-
+
+../3dparty/sfml/include/SFML/Graphics/Texture.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Image.hpp
+-
+SFML/Window/GlResource.hpp
 -
 
 ../3dparty/sfml/include/SFML/Graphics/Transform.hpp
@@ -288,19 +336,15 @@ SFML/Config.hpp
 
 ../3dparty/sfml/include/SFML/Window/WindowStyle.hpp
 
-/Users/snikolayen/mm/race00/app/src/snake.cpp
-snake.h
-/Users/snikolayen/mm/race00/app/src/snake.h
+/Users/snikolayen/mm/race00/app/src/menu.cpp
+SFML/Graphics/Sprite.hpp
+-
+menu.h
+/Users/snikolayen/mm/race00/app/src/menu.h
 
-/Users/snikolayen/mm/race00/app/src/snake.h
-iostream
--
-map
--
-SFML/Graphics/Color.hpp
--
-SFML/Graphics/RectangleShape.hpp
--
+/Users/snikolayen/mm/race00/app/src/menu.h
 SFML/Graphics/RenderWindow.hpp
+-
+SFML/Graphics/Text.hpp
 -
 

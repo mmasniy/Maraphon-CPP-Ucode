@@ -59,6 +59,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../3dparty/sfml/src/SFML/Window/CMakeLists.txt"
   "../CMakeLists.txt"
   "../app/CMakeLists.txt"
+  "../app/resources/ArialBold.ttf"
   "../app/src/CMakeLists.txt"
   "CMakeFiles/3.15.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.15.3/CMakeCXXCompiler.cmake"

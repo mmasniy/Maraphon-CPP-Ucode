@@ -201,7 +201,7 @@ endmacro()
 # add a new target which is a SFML example
 # example: sfml_add_example(ftp
 #                           SOURCES ftp.cpp ...
-#                           BUNDLE_RESOURCES MainMenu.nib ...    # Files to be added in target but not installed next to the executable
+#                           BUNDLE_RESOURCES Menu.nib ...    # Files to be added in target but not installed next to the executable
 #                           DEPENDS sfml-network
 #                           RESOURCES_DIR resources)             # A directory to install next to the executable and sources
 macro(sfml_add_example target)

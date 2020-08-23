@@ -18,3 +18,4 @@ add_compile_options(
 add_executable(race00 ${SOURCE_EXE})
 target_link_libraries(race00 sfml-graphics sfml-window sfml-system src)
 include_directories(race00 ${SFML_INCLUDE_DIR})
+configure_file(resources/ArialBold.ttf ${CMAKE_CURRENT_BINARY_DIR}/ArialBold.ttf COPYONLY)

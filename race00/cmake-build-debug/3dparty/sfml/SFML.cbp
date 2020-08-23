@@ -5,7 +5,7 @@
 		<Option title="SFML"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\3dparty\;CMake Files\3dparty\sfml\;CMake Files\3dparty\sfml\cmake\;CMake Files\3dparty\sfml\cmake\Modules\;CMake Files\3dparty\sfml\src\;CMake Files\3dparty\sfml\src\SFML\;CMake Files\3dparty\sfml\src\SFML\System\;CMake Files\3dparty\sfml\src\SFML\Window\;CMake Files\3dparty\sfml\src\SFML\Network\;CMake Files\3dparty\sfml\src\SFML\Graphics\;CMake Files\3dparty\sfml\src\SFML\Audio\;CMake Files\app\;CMake Files\app\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\3dparty\;CMake Files\3dparty\sfml\;CMake Files\3dparty\sfml\cmake\;CMake Files\3dparty\sfml\cmake\Modules\;CMake Files\3dparty\sfml\src\;CMake Files\3dparty\sfml\src\SFML\;CMake Files\3dparty\sfml\src\SFML\System\;CMake Files\3dparty\sfml\src\SFML\Window\;CMake Files\3dparty\sfml\src\SFML\Network\;CMake Files\3dparty\sfml\src\SFML\Graphics\;CMake Files\3dparty\sfml\src\SFML\Audio\;CMake Files\app\;CMake Files\app\resources\;CMake Files\app\src\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/sfml"/>
@@ -1164,6 +1164,9 @@
 		</Unit>
 		<Unit filename="/Users/snikolayen/mm/race00/app/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\app\"/>
+		</Unit>
+		<Unit filename="/Users/snikolayen/mm/race00/app/resources/ArialBold.ttf">
+			<Option virtualFolder="CMake Files\app\resources\"/>
 		</Unit>
 		<Unit filename="/Users/snikolayen/mm/race00/app/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\app\src\"/>
