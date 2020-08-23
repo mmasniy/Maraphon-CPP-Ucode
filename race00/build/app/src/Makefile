@@ -198,6 +198,60 @@ Game.cpp.s:
 	cd /Users/snikolayen/mm/race00/build && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+fruit.o: fruit.cpp.o
+
+.PHONY : fruit.o
+
+# target to build an object file
+fruit.cpp.o:
+	cd /Users/snikolayen/mm/race00/build && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/fruit.cpp.o
+.PHONY : fruit.cpp.o
+
+fruit.i: fruit.cpp.i
+
+.PHONY : fruit.i
+
+# target to preprocess a source file
+fruit.cpp.i:
+	cd /Users/snikolayen/mm/race00/build && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/fruit.cpp.i
+.PHONY : fruit.cpp.i
+
+fruit.s: fruit.cpp.s
+
+.PHONY : fruit.s
+
+# target to generate assembly for a file
+fruit.cpp.s:
+	cd /Users/snikolayen/mm/race00/build && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/fruit.cpp.s
+.PHONY : fruit.cpp.s
+
+functional.o: functional.cpp.o
+
+.PHONY : functional.o
+
+# target to build an object file
+functional.cpp.o:
+	cd /Users/snikolayen/mm/race00/build && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/functional.cpp.o
+.PHONY : functional.cpp.o
+
+functional.i: functional.cpp.i
+
+.PHONY : functional.i
+
+# target to preprocess a source file
+functional.cpp.i:
+	cd /Users/snikolayen/mm/race00/build && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/functional.cpp.i
+.PHONY : functional.cpp.i
+
+functional.s: functional.cpp.s
+
+.PHONY : functional.s
+
+# target to generate assembly for a file
+functional.cpp.s:
+	cd /Users/snikolayen/mm/race00/build && $(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/functional.cpp.s
+.PHONY : functional.cpp.s
+
 menu.o: menu.cpp.o
 
 .PHONY : menu.o
@@ -268,6 +322,12 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... fruit.o"
+	@echo "... fruit.i"
+	@echo "... fruit.s"
+	@echo "... functional.o"
+	@echo "... functional.i"
+	@echo "... functional.s"
 	@echo "... menu.o"
 	@echo "... menu.i"
 	@echo "... menu.s"

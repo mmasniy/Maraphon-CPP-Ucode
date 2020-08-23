@@ -91,7 +91,7 @@ void Menu::Show_LeaderBoard() {
 
 void Menu::Set_player_name(const std::string& new_name) {
     current_player.name = new_name;
-    menu[0].setString("New game for " + current_player.name);
+    menu[0].setString("New Game for " + current_player.name);
 
 }
 Player& Menu::GetPlayer() {

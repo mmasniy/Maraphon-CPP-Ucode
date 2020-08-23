@@ -1,7 +1,6 @@
 #pragma once
 
 #include <SFML/Graphics/RenderWindow.hpp>
-#include <SFML/Graphics/Text.hpp>
 
 #define MAX_NUMBER_OF_ITEMS 4
 

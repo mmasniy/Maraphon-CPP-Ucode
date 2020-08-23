@@ -79,7 +79,7 @@ race00_EXTERNAL_OBJECTS =
 
 app/race00: app/CMakeFiles/race00.dir/main.cpp.o
 app/race00: app/CMakeFiles/race00.dir/build.make
-app/race00: app/src/libsrc.dylib
+app/race00: app/src/libsrc.a
 app/race00: 3dparty/SFML/lib/libsfml-graphics.2.5.1.dylib
 app/race00: 3dparty/SFML/lib/libsfml-window.2.5.1.dylib
 app/race00: 3dparty/SFML/lib/libsfml-system.2.5.1.dylib

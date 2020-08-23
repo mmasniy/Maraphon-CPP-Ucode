@@ -68,6 +68,18 @@
 		<Unit filename="/Users/snikolayen/mm/race00/app/src/Game.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="/Users/snikolayen/mm/race00/app/src/fruit.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/snikolayen/mm/race00/app/src/fruit.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/snikolayen/mm/race00/app/src/functional.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/snikolayen/mm/race00/app/src/functional.h">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="/Users/snikolayen/mm/race00/app/src/menu.cpp">
 			<Option target="src"/>
 		</Unit>

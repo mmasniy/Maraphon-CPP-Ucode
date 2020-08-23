@@ -268,10 +268,10 @@ app/src/clean: app/src/CMakeFiles/src.dir/clean
 # Target rules for target app/CMakeFiles/race00.dir
 
 # All Build rule for target.
-app/CMakeFiles/race00.dir/all: app/src/CMakeFiles/src.dir/all
-app/CMakeFiles/race00.dir/all: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 app/CMakeFiles/race00.dir/all: 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/all
 app/CMakeFiles/race00.dir/all: 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
+app/CMakeFiles/race00.dir/all: app/src/CMakeFiles/src.dir/all
+app/CMakeFiles/race00.dir/all: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/depend
 	$(MAKE) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=1 "Built target race00"
@@ -298,12 +298,12 @@ app/CMakeFiles/race00.dir/clean:
 # Target rules for target app/src/CMakeFiles/src.dir
 
 # All Build rule for target.
-app/src/CMakeFiles/src.dir/all: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 app/src/CMakeFiles/src.dir/all: 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/all
 app/src/CMakeFiles/src.dir/all: 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
+app/src/CMakeFiles/src.dir/all: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/depend
 	$(MAKE) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=97,98,99,100 "Built target src"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=96,97,98,99,100 "Built target src"
 .PHONY : app/src/CMakeFiles/src.dir/all
 
 # Build rule for subdir invocation for target.
@@ -330,7 +330,7 @@ app/src/CMakeFiles/src.dir/clean:
 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all:
 	$(MAKE) -f 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/build.make 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/depend
 	$(MAKE) -f 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/build.make 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60,61,62,63 "Built target sfml-system"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=50,51,52,53,54,55,56,57,58,59,60,61,62 "Built target sfml-system"
 .PHONY : 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 
 # Build rule for subdir invocation for target.
@@ -357,7 +357,7 @@ sfml-system: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/rule
 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/all: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) -f 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/build.make 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/depend
 	$(MAKE) -f 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/build.make 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96 "Built target sfml-window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95 "Built target sfml-window"
 .PHONY : 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/all
 
 # Build rule for subdir invocation for target.
@@ -384,7 +384,7 @@ sfml-window: 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/rule
 3dparty/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/all: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) -f 3dparty/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make 3dparty/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/depend
 	$(MAKE) -f 3dparty/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make 3dparty/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=42,43,44,45,46,47,48,49,50 "Built target sfml-network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49 "Built target sfml-network"
 .PHONY : 3dparty/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/all
 
 # Build rule for subdir invocation for target.
@@ -408,16 +408,16 @@ sfml-network: 3dparty/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/rule
 # Target rules for target 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
 
 # All Build rule for target.
-3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all: 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/all
+3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) -f 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/depend
 	$(MAKE) -f 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Built target sfml-graphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snikolayen/mm/race00/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target sfml-graphics"
 .PHONY : 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 
 # Build rule for subdir invocation for target.
 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/snikolayen/mm/race00/build/CMakeFiles 70
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/snikolayen/mm/race00/build/CMakeFiles 69
 	$(MAKE) -f CMakeFiles/Makefile2 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/snikolayen/mm/race00/build/CMakeFiles 0
 .PHONY : 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule
