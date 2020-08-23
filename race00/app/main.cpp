@@ -14,8 +14,9 @@
 #define USAGE "usage: ./race00 [width] [height]"
 
 
-void game_start (sf::RenderWindow* window) {
-    Game game(window, sf::Color::Magenta, sf::Color::Cyan);
+void game_start (sf::RenderWindow* window, Player& player) {
+    Game game
+        (window, sf::Color::Magenta, sf::Color::Cyan, player);
     game.Start();
 }
 
@@ -75,7 +76,7 @@ int main(int argc, char* argv[]) {
                         switch (main.GetPressedItem()) {
                             case 0:
                                 std::cout << "Play button has been pressed" << std::endl;
-                                game_start(window);
+                                game_start(window, main.GetPlayer());
                             case 1:
                                 std::cout << "LeaderBoard" << std::endl;
                                 show_Show_LeaderBoard(window);

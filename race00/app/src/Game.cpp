@@ -1,10 +1,12 @@
 #include "Game.h"
 #include "../../../../../../../Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h"
 
-Game::Game(sf::RenderWindow *w, sf::Color colorHead, sf::Color colorBody)
-    : snake(w, colorHead, colorBody) {
+Game::Game(sf::RenderWindow *w,
+           sf::Color colorHead,
+           sf::Color colorBody,
+           Player &player_)
+    : snake(w, colorHead, colorBody), player(player_) {
     screen = w;
-    score = 0;
 }
 
 void Game::Start() {
@@ -36,6 +38,7 @@ void MoveSnakeOnMap(sf::Event &event, sf::Vector2<int> &direction) {
 }
 
 void Game::LoopIvent() {
+    player.score = 20;
     sf::Vector2<int> direction(-1, 0);
     bool flag = true;
     while (screen->isOpen() && flag) {
@@ -46,6 +49,7 @@ void Game::LoopIvent() {
             if (event.key.code == sf::Keyboard::Escape) {
                 screen->close();
             } else if (event.key.code == sf::Keyboard::Space) {
+                player.score += 5;
                 snake.AddBoxToTail(direction);
             }
         }

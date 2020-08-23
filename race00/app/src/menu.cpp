@@ -5,7 +5,6 @@
 #include <SFML/Graphics/Text.hpp>
 #include <SFML/Audio/Music.hpp>
 #include <SFML/Graphics/Sprite.hpp>
-
 #include "menu.h"
 
 Menu ::Menu(sf::RenderWindow *_window, float width, float height) {
@@ -90,6 +89,9 @@ void Menu::Set_player_name(const std::string& new_name) {
     current_player.name = new_name;
     menu[0].setString("New game for " + current_player.name);
 
+}
+Player& Menu::GetPlayer() {
+    return current_player;
 }
 
 

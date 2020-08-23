@@ -3,6 +3,7 @@
 #include <random>
 #include <list>
 
+#include "menu.h"
 #include "snake.h"
 
 #include <SFML/Window.hpp>
@@ -18,10 +19,12 @@ class Game {
     void LoadResources();
     Snake snake;
     sf::RenderWindow *screen;
-    float scale;
-    int score;
+    Player& player;
 
     public:
-    Game(sf::RenderWindow *w, sf::Color colorHead, sf::Color colorBody);
+    Game(sf::RenderWindow *w,
+         sf::Color colorHead,
+         sf::Color colorBody,
+         Player &player_);
     void Start();
 };
