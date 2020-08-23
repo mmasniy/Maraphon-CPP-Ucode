@@ -10,7 +10,7 @@ int main(int argc, char** argv) {
     if (argc == 3) {
         sf::RenderWindow
             window(sf::VideoMode(1920, 1080), "snake-line", sf::Style::Close);
-        Game game(&window, sf::Color::Magenta, sf::Color::Transparent);
+        Game game(&window, sf::Color::Magenta, sf::Color::Cyan);
         game.Start();
     }
     else {

@@ -13,7 +13,7 @@
 
 class Game {
     void LoopIvent();
-    void SetupMap();
+//    void SetupMap();
     void GameOver();
     void LoadResources();
     Snake snake;

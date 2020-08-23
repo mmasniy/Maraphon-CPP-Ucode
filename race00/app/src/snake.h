@@ -15,13 +15,15 @@ class Block {
     Block(sf::Vector2<int> new_pos, sf::Color color) {
         box.setSize(sf::Vector2f(BOX_SIZE, BOX_SIZE));
         box.setPosition(new_pos.x, new_pos.y);
+        position.x = new_pos.x;
+        position.y = new_pos.y;
         box.setFillColor(color);
     }
     sf::Vector2<int> GetPosition() {
         return position;
     }
 
-    sf::RectangleShape GetBox() const {
+    sf::RectangleShape GetBox() {
         return box;
     }
     private:
@@ -34,8 +36,9 @@ class Snake {
 public:
     Snake(sf::RenderWindow *window, sf::Color colorHead, sf::Color colorBody);
     void DrawSnake();
-    void MoveSnake(sf::Vector2<int> direction);
+    bool MoveSnake(sf::Vector2<int> direction);
     bool DiedSnake();
+    void AddBoxToTail(sf::Vector2<int> direction);
 //    bool AteFood(Food *fd);
 
 private:
@@ -45,8 +48,6 @@ private:
     int snake_length;
 
     std::deque<Block> body;
-    //    sf::RectangleShape rectangle(sf::Vector2f((4.f, 4.f)));
-    /*   Color snake   */
     sf::Color colorBody;
 };
 
