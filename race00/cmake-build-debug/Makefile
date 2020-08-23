@@ -192,7 +192,7 @@ sfml-system: cmake_check_build_system
 
 # fast build rule for target.
 sfml-system/fast:
-	$(MAKE) -f 3dparty/sfml/src/SFML/System/CMakeFiles/sfml-system.dir/build.make 3dparty/sfml/src/SFML/System/CMakeFiles/sfml-system.dir/build
+	$(MAKE) -f 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/build.make 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/build
 .PHONY : sfml-system/fast
 
 #=============================================================================
@@ -205,7 +205,7 @@ sfml-window: cmake_check_build_system
 
 # fast build rule for target.
 sfml-window/fast:
-	$(MAKE) -f 3dparty/sfml/src/SFML/Window/CMakeFiles/sfml-window.dir/build.make 3dparty/sfml/src/SFML/Window/CMakeFiles/sfml-window.dir/build
+	$(MAKE) -f 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/build.make 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/build
 .PHONY : sfml-window/fast
 
 #=============================================================================
@@ -218,7 +218,7 @@ sfml-network: cmake_check_build_system
 
 # fast build rule for target.
 sfml-network/fast:
-	$(MAKE) -f 3dparty/sfml/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make 3dparty/sfml/src/SFML/Network/CMakeFiles/sfml-network.dir/build
+	$(MAKE) -f 3dparty/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make 3dparty/SFML/src/SFML/Network/CMakeFiles/sfml-network.dir/build
 .PHONY : sfml-network/fast
 
 #=============================================================================
@@ -231,7 +231,7 @@ sfml-graphics: cmake_check_build_system
 
 # fast build rule for target.
 sfml-graphics/fast:
-	$(MAKE) -f 3dparty/sfml/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make 3dparty/sfml/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
+	$(MAKE) -f 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
 .PHONY : sfml-graphics/fast
 
 #=============================================================================
@@ -244,7 +244,7 @@ sfml-audio: cmake_check_build_system
 
 # fast build rule for target.
 sfml-audio/fast:
-	$(MAKE) -f 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
+	$(MAKE) -f 3dparty/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make 3dparty/SFML/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
 # Help Target

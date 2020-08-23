@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/src.dir/Game.cpp.o"
   "CMakeFiles/src.dir/menu.cpp.o"
   "CMakeFiles/src.dir/snake.cpp.o"
   "libsrc.dylib"

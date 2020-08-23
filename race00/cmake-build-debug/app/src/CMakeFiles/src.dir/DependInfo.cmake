@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/snikolayen/mm/race00/app/src/Game.cpp" "/Users/snikolayen/mm/race00/cmake-build-debug/app/src/CMakeFiles/src.dir/Game.cpp.o"
   "/Users/snikolayen/mm/race00/app/src/menu.cpp" "/Users/snikolayen/mm/race00/cmake-build-debug/app/src/CMakeFiles/src.dir/menu.cpp.o"
   "/Users/snikolayen/mm/race00/app/src/snake.cpp" "/Users/snikolayen/mm/race00/cmake-build-debug/app/src/CMakeFiles/src.dir/snake.cpp.o"
   )
@@ -16,14 +17,14 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../3dparty/sfml/include"
+  "../3dparty/SFML/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/sfml/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/DependInfo.cmake"
-  "/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/sfml/src/SFML/Window/CMakeFiles/sfml-window.dir/DependInfo.cmake"
-  "/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/sfml/src/SFML/System/CMakeFiles/sfml-system.dir/DependInfo.cmake"
+  "/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/DependInfo.cmake"
+  "/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/DependInfo.cmake"
+  "/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

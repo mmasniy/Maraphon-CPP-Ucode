@@ -8,11 +8,16 @@ app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Audio/Music.h
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Audio/SoundSource.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Audio/SoundStream.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Config.hpp
+app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/BlendMode.hpp
+app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/CircleShape.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Color.hpp
+app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/ConvexShape.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Drawable.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Export.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Font.hpp
+app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Glsl.hpp
+app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Glsl.inl
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Glyph.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Image.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/PrimitiveType.hpp
@@ -21,7 +26,9 @@ app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Rect
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/RectangleShape.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/RenderStates.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/RenderTarget.hpp
+app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/RenderTexture.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/RenderWindow.hpp
+app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Shader.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Shape.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Sprite.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Text.hpp
@@ -30,6 +37,7 @@ app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Tran
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Transformable.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/Vertex.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/VertexArray.hpp
+app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/VertexBuffer.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Graphics/View.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/System.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/System/Clock.hpp
@@ -76,6 +84,7 @@ app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Window/Window
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Window/WindowHandle.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../3dparty/sfml/include/SFML/Window/WindowStyle.hpp
 app/CMakeFiles/race00.dir/main.cpp.o: ../app/main.cpp
+app/CMakeFiles/race00.dir/main.cpp.o: ../app/src/Game.h
 app/CMakeFiles/race00.dir/main.cpp.o: ../app/src/menu.h
 app/CMakeFiles/race00.dir/main.cpp.o: ../app/src/snake.h
 

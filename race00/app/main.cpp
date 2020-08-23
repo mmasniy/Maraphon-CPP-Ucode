@@ -7,28 +7,38 @@
 #include <SFML/Graphics/Sprite.hpp>
 #include "src/menu.h"
 #include "src/snake.h"
+#include "src/Game.h"
 
 #define USAGE "usage: ./race00 [width] [height]"
 
+void game_start (sf::RenderWindow* window) {
+    Game game(window, sf::Color::Magenta, sf::Color::Transparent);
+    game.Start();
+}
+
 int main(int argc, char* argv[]) {
 
-    sf::RenderWindow window(sf::VideoMode(800, 800), "MAIN SNAKE");
+//    if (argc != 3) {
+//        std::cerr << USAGE << std::endl;
+//        return EXIT_FAILURE;
+//    }
 
-    Menu main(window.getSize().x, window.getSize().y);
+    sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(1920, 1280), "snake-linee");
 
-    window.setTitle("MAIN SNAKE");
+    Menu main(window, window->getSize().x, window->getSize().y);
 
-    sf::Vector2u size = window.getSize();  // Get the size of the rendering region of the window.
+    window->setTitle("MAIN SNAKE");
+
+    sf::Vector2u size = window->getSize();  // Get the size of the rendering region of the window.
     int width = size.x;
     int height = size.y;
 
     std::cout << "width = " << width <<std::endl;
     std::cout << "height = " << height <<std::endl;
 
-    while (window.isOpen()) {
+    while (window->isOpen()) {
         sf::Event event;
-
-        while (window.pollEvent(event)) {
+        while (window->pollEvent(event)) {
             switch (event.type) {
                 case sf::Event::KeyReleased:
                     switch (event.key.code) {
@@ -43,7 +53,8 @@ int main(int argc, char* argv[]) {
                             switch (main.GetPressedItem()) {
                                 case 0:
                                     std::cout << "Play button has been pressed" << std::endl;
-//                                    main.Play_Game(window);
+                                    game_start(window);
+
                                 case 1:
                                     std::cout << "LeaderBoard" << std::endl;
 
@@ -52,7 +63,7 @@ int main(int argc, char* argv[]) {
                                     std::cout << "Options" << std::endl;
                                     break;
                                 case 3:
-                                    window.close();
+                                    window->close();
                             }
                             break;
                         default:
@@ -60,16 +71,17 @@ int main(int argc, char* argv[]) {
                     }
                     break;
                 case sf::Event::Closed:
-                    window.close();
+                    window->close();
                     break;
                 default:
                     ;
             }
         }
-        window.clear();
-        main.start(window);
-        window.display();
+        window->clear();
+        main.start(*window);
+        window->display();
     }
+    delete window;
     return 0;
 }
 

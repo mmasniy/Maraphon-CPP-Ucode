@@ -80,9 +80,9 @@ race00_EXTERNAL_OBJECTS =
 app/race00: app/CMakeFiles/race00.dir/main.cpp.o
 app/race00: app/CMakeFiles/race00.dir/build.make
 app/race00: app/src/libsrc.dylib
-app/race00: 3dparty/sfml/lib/libsfml-graphics-d.2.5.1.dylib
-app/race00: 3dparty/sfml/lib/libsfml-window-d.2.5.1.dylib
-app/race00: 3dparty/sfml/lib/libsfml-system-d.2.5.1.dylib
+app/race00: 3dparty/SFML/lib/libsfml-graphics-d.2.5.1.dylib
+app/race00: 3dparty/SFML/lib/libsfml-window-d.2.5.1.dylib
+app/race00: 3dparty/SFML/lib/libsfml-system-d.2.5.1.dylib
 app/race00: app/CMakeFiles/race00.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/snikolayen/mm/race00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable race00"
 	cd /Users/snikolayen/mm/race00/cmake-build-debug/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/race00.dir/link.txt --verbose=$(VERBOSE)

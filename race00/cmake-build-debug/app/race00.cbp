@@ -5,7 +5,7 @@
 		<Option title="race00"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\3dparty\;CMake Files\3dparty\sfml\;CMake Files\3dparty\sfml\cmake\;CMake Files\3dparty\sfml\cmake\Modules\;CMake Files\3dparty\sfml\src\;CMake Files\3dparty\sfml\src\SFML\;CMake Files\3dparty\sfml\src\SFML\System\;CMake Files\3dparty\sfml\src\SFML\Window\;CMake Files\3dparty\sfml\src\SFML\Network\;CMake Files\3dparty\sfml\src\SFML\Graphics\;CMake Files\3dparty\sfml\src\SFML\Audio\;CMake Files\app\;CMake Files\app\resources\;CMake Files\app\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\3dparty\;CMake Files\3dparty\SFML\;CMake Files\3dparty\SFML\cmake\;CMake Files\3dparty\SFML\cmake\Modules\;CMake Files\3dparty\SFML\src\;CMake Files\3dparty\SFML\src\SFML\;CMake Files\3dparty\SFML\src\SFML\System\;CMake Files\3dparty\SFML\src\SFML\Window\;CMake Files\3dparty\SFML\src\SFML\Network\;CMake Files\3dparty\SFML\src\SFML\Graphics\;CMake Files\3dparty\SFML\src\SFML\Audio\;CMake Files\app\;CMake Files\app\resources\;CMake Files\app\src\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/snikolayen/mm/race00/cmake-build-debug/app"/>
@@ -26,7 +26,7 @@
 				<Compiler>
 					<Add directory="/Users/snikolayen/mm/race00/app/../3dparty/sfml/include"/>
 					<Add directory="/Users/snikolayen/mm/race00/app/race00"/>
-					<Add directory="/Users/snikolayen/mm/race00/3dparty/sfml/include"/>
+					<Add directory="/Users/snikolayen/mm/race00/3dparty/SFML/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -50,7 +50,7 @@
 				<Compiler>
 					<Add directory="/Users/snikolayen/mm/race00/app/../3dparty/sfml/include"/>
 					<Add directory="/Users/snikolayen/mm/race00/app/race00"/>
-					<Add directory="/Users/snikolayen/mm/race00/3dparty/sfml/include"/>
+					<Add directory="/Users/snikolayen/mm/race00/3dparty/SFML/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -72,7 +72,7 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/snikolayen/mm/race00/3dparty/sfml/include"/>
+					<Add directory="/Users/snikolayen/mm/race00/3dparty/SFML/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -94,7 +94,7 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/snikolayen/mm/race00/3dparty/sfml/include"/>
+					<Add directory="/Users/snikolayen/mm/race00/3dparty/SFML/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -112,6 +112,12 @@
 		</Build>
 		<Unit filename="/Users/snikolayen/mm/race00/app/main.cpp">
 			<Option target="race00"/>
+		</Unit>
+		<Unit filename="/Users/snikolayen/mm/race00/app/src/Game.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/snikolayen/mm/race00/app/src/Game.h">
+			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/snikolayen/mm/race00/app/src/menu.cpp">
 			<Option target="src"/>
@@ -131,47 +137,47 @@
 		<Unit filename="/Users/snikolayen/mm/race00/3dparty/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\3dparty\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\3dparty\sfml\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\SFML\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/cmake/Config.cmake">
-			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/cmake/Config.cmake">
+			<Option virtualFolder="CMake Files\3dparty\SFML\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/cmake/Macros.cmake">
-			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/cmake/Macros.cmake">
+			<Option virtualFolder="CMake Files\3dparty\SFML\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/cmake/SFMLConfig.cmake.in">
-			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/cmake/SFMLConfig.cmake.in">
+			<Option virtualFolder="CMake Files\3dparty\SFML\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/cmake/SFMLConfigDependencies.cmake.in">
-			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/cmake/SFMLConfigDependencies.cmake.in">
+			<Option virtualFolder="CMake Files\3dparty\SFML\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/cmake/Modules/FindFLAC.cmake">
-			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\Modules\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/cmake/Modules/FindFLAC.cmake">
+			<Option virtualFolder="CMake Files\3dparty\SFML\cmake\Modules\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/cmake/Modules/FindFreetype.cmake">
-			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\Modules\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/cmake/Modules/FindFreetype.cmake">
+			<Option virtualFolder="CMake Files\3dparty\SFML\cmake\Modules\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/cmake/Modules/FindVORBIS.cmake">
-			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\Modules\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/cmake/Modules/FindVORBIS.cmake">
+			<Option virtualFolder="CMake Files\3dparty\SFML\cmake\Modules\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\SFML\src\SFML\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/System/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\System\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/System/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\SFML\src\SFML\System\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Window/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\Window\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\SFML\src\SFML\Window\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Network/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\Network\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Network/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\SFML\src\SFML\Network\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\Graphics\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Graphics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\SFML\src\SFML\Graphics\"/>
 		</Unit>
-		<Unit filename="/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Audio/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\Audio\"/>
+		<Unit filename="/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\SFML\src\SFML\Audio\"/>
 		</Unit>
 		<Unit filename="/Users/snikolayen/mm/race00/app/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\app\"/>

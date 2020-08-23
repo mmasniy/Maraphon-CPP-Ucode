@@ -8,7 +8,7 @@
 class Menu {
 public:
 
-    Menu(float width, float height);
+    Menu(sf::RenderWindow *_window, float width, float height);
     ~Menu();
     void start(sf::RenderWindow &w);
     void MoveUp();
@@ -16,9 +16,10 @@ public:
     int GetPressedItem();
     void Play_Game(sf::RenderWindow &w);
     void Show_LeaderBoard();
+//    sf::RenderWindow GetWindow();
 
 private:
-
+    sf::RenderWindow *window;
     sf::Font font;
     int selectedItemIndex;
     sf::Text menu[MAX_NUMBER_OF_ITEMS];

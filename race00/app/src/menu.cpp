@@ -1,9 +1,20 @@
 #include <SFML/Graphics/Sprite.hpp>
+
+#include <SFML/Window.hpp>
+#include <SFML/Graphics/Texture.hpp>
+#include <SFML/Graphics/RectangleShape.hpp>
+#include <SFML/Graphics/Text.hpp>
+#include <SFML/Audio/Music.hpp>
+#include <SFML/Graphics/Sprite.hpp>
+
 #include "menu.h"
 
 
-Menu::Menu(float width, float height) {
 
+
+Menu ::Menu(sf::RenderWindow *_window, float width, float height) {
+
+    window = _window;
     if (!font.loadFromFile("ArialBold.ttf")) { }
 
     int font_size = std::min(width, height) / 25;
@@ -84,6 +95,10 @@ void Menu::Show_LeaderBoard() {
 
 
 }
+
+//sf::RenderWindow Menu::GetWindow() {
+//    return window;
+//}
 
 StartGameAction::StartGameAction( sf::RenderWindow *w ) {
     window = w;
