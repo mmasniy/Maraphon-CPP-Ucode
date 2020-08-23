@@ -17,7 +17,7 @@ Menu ::Menu(sf::RenderWindow *_window, float width, float height) {
     menu[0].setCharacterSize(font_size);
 
     menu[0].setColor(font_color);
-    menu[0].setString("New game for " + current_player.name);
+    menu[0].setString("New Game for " + current_player.name);
     menu[0].setPosition(sf::Vector2f(width / 2 - 50, height / (MAX_NUMBER_OF_ITEMS + 1) * 1));
 
     menu[1].setFont(font);
@@ -87,7 +87,7 @@ void Menu::Show_LeaderBoard() {
 
 void Menu::Set_player_name(const std::string& new_name) {
     current_player.name = new_name;
-    menu[0].setString("New game for " + current_player.name);
+    menu[0].setString("New Game for " + current_player.name);
 
 }
 Player& Menu::GetPlayer() {

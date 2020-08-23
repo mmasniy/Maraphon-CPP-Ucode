@@ -270,7 +270,7 @@ bool JoystickImpl::open(unsigned int index)
                         break;
 
                     case kHIDUsage_GD_GamePad:
-                        // We assume a game pad is an application collection, meaning it doesn't hold
+                        // We assume a Game pad is an application collection, meaning it doesn't hold
                         // any values per say. They kind of "emit" the joystick's usages.
                         // See §3.4.3 Usage Types (Collection) of HUT v1.12
                         if (IOHIDElementGetCollectionType(element) != kIOHIDElementCollectionTypeApplication)

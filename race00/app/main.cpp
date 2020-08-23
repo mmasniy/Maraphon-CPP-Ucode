@@ -1,14 +1,11 @@
 #include <iostream>
-#include <SFML/Window.hpp>
-#include <SFML/Graphics/Texture.hpp>
-#include <SFML/Graphics/RectangleShape.hpp>
-#include <SFML/Graphics/Text.hpp>
-#include <SFML/Audio/Music.hpp>
-#include <SFML/Graphics/Sprite.hpp>
-#include <zconf.h>
-#include "src/menu.h"
+
+#include "src/functional.h"
 #include "src/snake.h"
 #include "src/Game.h"
+#include "src/menu.h"
+#include "src/fruit.h"
+
 #include <string>
 
 #define USAGE "usage: ./race00 [width] [height]"
@@ -48,13 +45,13 @@ void show_Show_LeaderBoard(sf::RenderWindow* window) {
     }
 
 }
-int main(int argc, char* argv[]) {
+int main(int argc, char** argv) {
 
 //    if (argc != 3) {
 //        std::cerr << USAGE << std::endl;
 //        return EXIT_FAILURE;
 //    }
-    sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(1920, 1080), "snake-line");
+    sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(std::stoi(argv[1]), std::stoi(argv[2])), "snake-line");
     Menu main(window, window->getSize().x, window->getSize().y);
     window->setTitle("MAIN SNAKE");
 
