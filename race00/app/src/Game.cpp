@@ -8,8 +8,8 @@ Game::Game(sf::RenderWindow *w, sf::Color colorHead, sf::Color colorBody)
 }
 
 void Game::Start() {
-    LoadResources();
-    LoopIvent();
+        LoadResources();
+        LoopIvent();
 }
 
 void Game::LoadResources() {

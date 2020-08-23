@@ -27,7 +27,7 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2007-2019 Marco Antognini and Laurent Gomila. Shared under zlib/libpng License.</string>
 	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
+	<string>Menu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>NSHighResolutionCapable</key>
