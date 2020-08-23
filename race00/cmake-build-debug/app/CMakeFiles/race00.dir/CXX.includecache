@@ -765,12 +765,16 @@ SFML/Audio/Music.hpp
 -
 SFML/Graphics/Sprite.hpp
 -
+zconf.h
+-
 src/menu.h
 /Users/snikolayen/mm/race00/app/src/menu.h
 src/snake.h
 /Users/snikolayen/mm/race00/app/src/snake.h
 src/Game.h
 /Users/snikolayen/mm/race00/app/src/Game.h
+string
+-
 
 /Users/snikolayen/mm/race00/app/src/Game.h
 random

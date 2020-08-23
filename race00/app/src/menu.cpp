@@ -1,5 +1,4 @@
 #include <SFML/Graphics/Sprite.hpp>
-
 #include <SFML/Window.hpp>
 #include <SFML/Graphics/Texture.hpp>
 #include <SFML/Graphics/RectangleShape.hpp>
@@ -9,25 +8,17 @@
 
 #include "menu.h"
 
-
-
-
 Menu ::Menu(sf::RenderWindow *_window, float width, float height) {
-
     window = _window;
     if (!font.loadFromFile("ArialBold.ttf")) { }
-
     int font_size = std::min(width, height) / 25;
-
-
-
 
     sf::Color font_color(255, 140, 0, 255);
     menu[0].setFont(font);
     menu[0].setCharacterSize(font_size);
 
     menu[0].setColor(font_color);
-    menu[0].setString("New game");
+    menu[0].setString("New game for " + current_player.name);
     menu[0].setPosition(sf::Vector2f(width / 2 - 50, height / (MAX_NUMBER_OF_ITEMS + 1) * 1));
 
     menu[1].setFont(font);
@@ -51,7 +42,6 @@ Menu ::Menu(sf::RenderWindow *_window, float width, float height) {
     menu[3].setString("Exit");
     menu[3].setPosition(sf::Vector2f(width / 2 - 50, height / (MAX_NUMBER_OF_ITEMS + 1) * 4));
     selectedItemIndex = 0;
-
 }
 
 Menu::~Menu() { }
@@ -92,25 +82,15 @@ int Menu :: GetPressedItem() {
 }
 
 void Menu::Show_LeaderBoard() {
-
-
-}
-
-//sf::RenderWindow Menu::GetWindow() {
-//    return window;
-//}
-
-StartGameAction::StartGameAction( sf::RenderWindow *w ) {
-    window = w;
-}
-
-
-void Play_Game(sf::RenderWindow &w) {
     sf::Text text;
     text.setString("Hello world");
 }
 
+void Menu::Set_player_name(const std::string& new_name) {
+    current_player.name = new_name;
+    menu[0].setString("New game for " + current_player.name);
 
+}
 
 
 

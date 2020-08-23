@@ -7,8 +7,8 @@ Game::Game(sf::RenderWindow *w, sf::Color colorHead, sf::Color colorBody)
 }
 
 void Game::Start() {
-    LoadResources();
-    LoopIvent();
+        LoadResources();
+        LoopIvent();
 }
 
 void Game::LoadResources() {
@@ -42,7 +42,7 @@ void Game::LoopIvent() {
         sf::Event event;
         while (screen->pollEvent(event)) {
             MoveSnakeOnMap(event, direction);
-            if (event.key.code == sf::Keyboard::Space) {
+            if (event.key.code == sf::Keyboard::Escape) {
                 screen->close();
             }
         }

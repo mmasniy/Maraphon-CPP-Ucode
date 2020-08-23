@@ -5,9 +5,11 @@
 #include <SFML/Graphics/Text.hpp>
 #include <SFML/Audio/Music.hpp>
 #include <SFML/Graphics/Sprite.hpp>
+#include <zconf.h>
 #include "src/menu.h"
 #include "src/snake.h"
 #include "src/Game.h"
+#include <string>
 
 #define USAGE "usage: ./race00 [width] [height]"
 
@@ -16,65 +18,101 @@ void game_start (sf::RenderWindow* window) {
     game.Start();
 }
 
+void show_Show_LeaderBoard(sf::RenderWindow* window) {
+
+    sf::Event event;
+    std::cout << window->isOpen() << std::endl;
+    while (window->pollEvent(event)) {
+        std::cout << "ddddd5\n" << std::endl;
+        window->clear();
+        sf::Font font;
+
+        if (!font.loadFromFile("ArialBold.ttf")) {
+            //err
+        }
+
+        sf::Text text;
+        text.setString("Hello world");
+
+        text.setFont(font);
+        text.setCharacterSize(30);
+        text.setColor(sf::Color::White);
+        window->draw(text);
+
+        window->display();
+        if (event.key.code == sf::Keyboard::Escape) {
+            break;
+        }
+    }
+
+}
 int main(int argc, char* argv[]) {
 
 //    if (argc != 3) {
 //        std::cerr << USAGE << std::endl;
 //        return EXIT_FAILURE;
 //    }
-
-    sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(1920, 1280), "snake-linee");
-
+    sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(1920, 1280), "snake-line");
     Menu main(window, window->getSize().x, window->getSize().y);
-
     window->setTitle("MAIN SNAKE");
 
-    sf::Vector2u size = window->getSize();  // Get the size of the rendering region of the window.
-    int width = size.x;
-    int height = size.y;
-
-    std::cout << "width = " << width <<std::endl;
-    std::cout << "height = " << height <<std::endl;
+    std::string new_player_name;
 
     while (window->isOpen()) {
         sf::Event event;
         while (window->pollEvent(event)) {
-            switch (event.type) {
-                case sf::Event::KeyReleased:
-                    switch (event.key.code) {
-                        case sf::Keyboard::Up:
-                            main.MoveUp();
-                            break;
-                        case sf::Keyboard::Down:
-                            main.MoveDown();
-                            break;
+            if (event.type == sf::Event::KeyReleased) {
+                switch (event.key.code) {
+                    case sf::Keyboard::Up:
+                        main.MoveUp();
+                        break;
+                    case sf::Keyboard::Down:
+                        main.MoveDown();
+                        break;
 
-                        case sf::Keyboard::Return: //enter
-                            switch (main.GetPressedItem()) {
-                                case 0:
-                                    std::cout << "Play button has been pressed" << std::endl;
-                                    game_start(window);
+                    case sf::Keyboard::Return: //enter
+                        switch (main.GetPressedItem()) {
+                            case 0:
+                                std::cout << "Play button has been pressed" << std::endl;
+                                game_start(window);
 
-                                case 1:
-                                    std::cout << "LeaderBoard" << std::endl;
+                            case 1:
+                                std::cout << "LeaderBoard" << std::endl;
+                                show_Show_LeaderBoard(window);
 
-
-                                case 2:
-                                    std::cout << "Options" << std::endl;
-                                    break;
-                                case 3:
-                                    window->close();
-                            }
-                            break;
-                        default:
-                            ;
+                            case 2:
+                                std::cout << "Options" << std::endl;
+                                break;
+                            case 3:
+                                window->close();
+                        }
+                        break;
+                    default:
+                        ;
+                }
+            }
+            else if (sf::Event::TextEntered) {
+                while (window->pollEvent(event)) {
+                    std::cout << "dddddddaaa5\n" << std::endl;
+                    window->clear();
+                    if (new_player_name.size() > 8) {
+                        break;
                     }
-                    break;
-                case sf::Event::Closed:
-                    window->close();
-                    break;
-                default:
-                    ;
+//                    if ()
+                    new_player_name += event.text.unicode;
+//                    main.current_player.name = player_name;
+                    main.Set_player_name(new_player_name);
+//                    window->draw(text);
+//                    window->display();
+//                    if (event.key.code == sf::Keyboard::Escape) {
+//                        break;
+//                    }
+                }
+            }
+            else {
+//                (sf::Event::Closed) {
+                window->close();
+                break;
             }
         }
         window->clear();
@@ -117,5 +155,13 @@ int main(int argc, char* argv[]) {
             window.display();
 
         }
+
+    sf::Vector2u size = window->getSize();  // Get the size of the rendering region of the window.
+    int width = size.x;
+    int height = size.y;
+
+    std::cout << "width = " << width <<std::endl;
+    std::cout << "height = " << height <<std::endl;
+
 
  */
