@@ -23,10 +23,13 @@ public:
     void MoveUp();
     void MoveDown();
     int GetPressedItem();
-//    void Play_Game(sf::RenderWindow &w);
     void Show_LeaderBoard();
     void Set_player_name(const std::string& new_name);
     Player& GetPlayer();
+    void Add_player_score();
+    void Save_result_to_file();
+    void Update_result_from_file();
+
 private:
     Player current_player;
     sf::RenderWindow *window;
@@ -36,12 +39,3 @@ private:
     sf::Color font_color;
     std::multimap<int, std::string> score_table;
 };
-
-
-//class StartGameAction {
-//public:
-//    StartGameAction( sf::RenderWindow *w);
-//    bool start();
-//private:
-//    sf::RenderWindow *window;
-//};

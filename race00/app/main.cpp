@@ -54,10 +54,10 @@ int main(int argc, char* argv[]) {
 //        std::cerr << USAGE << std::endl;
 //        return EXIT_FAILURE;
 //    }
-    sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(1920, 1080), "snake-line");
+    sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(1920, 1080), "snake-line", sf::Style::Titlebar);
     Menu main(window, window->getSize().x, window->getSize().y);
-    window->setTitle("MAIN SNAKE");
-
+    window->setTitle("SNAKE");
+    window->setMouseCursorVisible(false);
     std::string new_player_name;
 
     while (window->isOpen()) {
@@ -77,6 +77,8 @@ int main(int argc, char* argv[]) {
                             case 0:
                                 std::cout << "Play button has been pressed" << std::endl;
                                 game_start(window, main.GetPlayer());
+                                main.Add_player_score();
+                                main.Save_result_to_file();
                             case 1:
                                 std::cout << "LeaderBoard" << std::endl;
                                 show_Show_LeaderBoard(window);
@@ -96,13 +98,21 @@ int main(int argc, char* argv[]) {
                 while (window->pollEvent(event)) {
                     std::cout << "dddddddaaa5\n" << std::endl;
                     window->clear();
-                    if (new_player_name.size() > 8) {
+                    if (new_player_name.size() > 8 && event.text.unicode != '\b') {
                         break;
                     }
-//                    if ()
-                    new_player_name += event.text.unicode;
+                    else if (event.text.unicode == '\b') {
+                        std::cout << "event.text.unicod\n" << std::endl;
+                        main.Set_player_name(std::string(new_player_name.begin(), --new_player_name.end()));
+                        break;
+                    } else {
+                        new_player_name += event.text.unicode;
+                        main.Set_player_name(new_player_name);
+
+                    }
+//                    new_player_name += event.text.unicode;
 //                    main.current_player.name = player_name;
-                    main.Set_player_name(new_player_name);
+
 //                    window->draw(text);
 //                    window->display();
 //                    if (event.key.code == sf::Keyboard::Escape) {
