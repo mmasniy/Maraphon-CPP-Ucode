@@ -1,4 +1,4 @@
-/Users/snikolayen/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/snikolayen/mm/race00
+/Users/mmasniy/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00
 CMake Warning at 3dparty/CMakeLists.txt:10 (find_package):
   By not providing "FindSFML.cmake" in CMAKE_MODULE_PATH this project has
   asked CMake to find a package configuration file provided by "SFML", but
@@ -35,4 +35,4 @@ CMake Warning at 3dparty/CMakeLists.txt:12 (find_package):
 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/snikolayen/mm/race00/cmake-build-debug
+-- Build files have been written to: /Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/cmake-build-debug

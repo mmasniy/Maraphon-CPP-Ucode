@@ -6,35 +6,103 @@
 
 #IncludeRegexTransform: 
 
-../3dparty/sfml/extlibs/headers/freetype2/config/ftheader.h
-
-../3dparty/sfml/extlibs/headers/freetype2/ft2build.h
-config/ftheader.h
+../3dparty/SFML/extlibs/headers/glad/include/glad/gl.h
+winapifamily.h
+-
+stdint.h
+-
+inttypes.h
+-
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
 -
 
-../3dparty/sfml/include/SFML/Config.hpp
+../3dparty/SFML/extlibs/headers/stb_image/stb_image.h
+stb_image.h
+../3dparty/SFML/extlibs/headers/stb_image/stb_image.h
+stdio.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
+../3dparty/SFML/extlibs/headers/stb_image/stb_image_write.h
+stdio.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
+
+../3dparty/SFML/include/SFML/Config.hpp
 TargetConditionals.h
-../3dparty/sfml/include/SFML/TargetConditionals.h
+../3dparty/SFML/include/SFML/TargetConditionals.h
 
-../3dparty/sfml/include/SFML/Graphics/BlendMode.hpp
+../3dparty/SFML/include/SFML/Graphics/BlendMode.hpp
 SFML/Graphics/Export.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/Color.hpp
+../3dparty/SFML/include/SFML/Graphics/CircleShape.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Shape.hpp
+-
+
+../3dparty/SFML/include/SFML/Graphics/Color.hpp
 SFML/Graphics/Export.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/Drawable.hpp
+../3dparty/SFML/include/SFML/Graphics/ConvexShape.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Shape.hpp
+-
+vector
+-
+
+../3dparty/SFML/include/SFML/Graphics/Drawable.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/RenderStates.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/Export.hpp
+../3dparty/SFML/include/SFML/Graphics/Export.hpp
 SFML/Config.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/Font.hpp
+../3dparty/SFML/include/SFML/Graphics/Font.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Glyph.hpp
@@ -54,7 +122,7 @@ string
 vector
 -
 
-../3dparty/sfml/include/SFML/Graphics/Glsl.hpp
+../3dparty/SFML/include/SFML/Graphics/Glsl.hpp
 SFML/Graphics/Transform.hpp
 -
 SFML/Graphics/Color.hpp
@@ -66,15 +134,15 @@ SFML/System/Vector3.hpp
 SFML/Graphics/Glsl.inl
 -
 
-../3dparty/sfml/include/SFML/Graphics/Glsl.inl
+../3dparty/SFML/include/SFML/Graphics/Glsl.inl
 
-../3dparty/sfml/include/SFML/Graphics/Glyph.hpp
+../3dparty/SFML/include/SFML/Graphics/Glyph.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Rect.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/Image.hpp
+../3dparty/SFML/include/SFML/Graphics/Image.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Color.hpp
@@ -86,9 +154,9 @@ string
 vector
 -
 
-../3dparty/sfml/include/SFML/Graphics/PrimitiveType.hpp
+../3dparty/SFML/include/SFML/Graphics/PrimitiveType.hpp
 
-../3dparty/sfml/include/SFML/Graphics/Rect.hpp
+../3dparty/SFML/include/SFML/Graphics/Rect.hpp
 SFML/System/Vector2.hpp
 -
 algorithm
@@ -96,9 +164,15 @@ algorithm
 SFML/Graphics/Rect.inl
 -
 
-../3dparty/sfml/include/SFML/Graphics/Rect.inl
+../3dparty/SFML/include/SFML/Graphics/Rect.inl
 
-../3dparty/sfml/include/SFML/Graphics/RenderStates.hpp
+../3dparty/SFML/include/SFML/Graphics/RectangleShape.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Shape.hpp
+-
+
+../3dparty/SFML/include/SFML/Graphics/RenderStates.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/BlendMode.hpp
@@ -106,7 +180,7 @@ SFML/Graphics/BlendMode.hpp
 SFML/Graphics/Transform.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/RenderTarget.hpp
+../3dparty/SFML/include/SFML/Graphics/RenderTarget.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Color.hpp
@@ -128,7 +202,17 @@ SFML/Graphics/Vertex.hpp
 SFML/System/NonCopyable.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/RenderWindow.hpp
+../3dparty/SFML/include/SFML/Graphics/RenderTexture.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+SFML/Window/ContextSettings.hpp
+-
+
+../3dparty/SFML/include/SFML/Graphics/RenderWindow.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/RenderTarget.hpp
@@ -140,7 +224,7 @@ SFML/Window/Window.hpp
 string
 -
 
-../3dparty/sfml/include/SFML/Graphics/Shader.hpp
+../3dparty/SFML/include/SFML/Graphics/Shader.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Glsl.hpp
@@ -158,7 +242,51 @@ map
 string
 -
 
-../3dparty/sfml/include/SFML/Graphics/Texture.hpp
+../3dparty/SFML/include/SFML/Graphics/Shape.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+SFML/Graphics/Transformable.hpp
+-
+SFML/Graphics/VertexArray.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+../3dparty/SFML/include/SFML/Graphics/Sprite.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+SFML/Graphics/Transformable.hpp
+-
+SFML/Graphics/Vertex.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+
+../3dparty/SFML/include/SFML/Graphics/Text.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Drawable.hpp
+-
+SFML/Graphics/Transformable.hpp
+-
+SFML/Graphics/Font.hpp
+-
+SFML/Graphics/Rect.hpp
+-
+SFML/Graphics/VertexArray.hpp
+-
+SFML/System/String.hpp
+-
+string
+-
+vector
+-
+
+../3dparty/SFML/include/SFML/Graphics/Texture.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Image.hpp
@@ -166,7 +294,7 @@ SFML/Graphics/Image.hpp
 SFML/Window/GlResource.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/Transform.hpp
+../3dparty/SFML/include/SFML/Graphics/Transform.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Rect.hpp
@@ -174,7 +302,13 @@ SFML/Graphics/Rect.hpp
 SFML/System/Vector2.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/Vertex.hpp
+../3dparty/SFML/include/SFML/Graphics/Transformable.hpp
+SFML/Graphics/Export.hpp
+-
+SFML/Graphics/Transform.hpp
+-
+
+../3dparty/SFML/include/SFML/Graphics/Vertex.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Color.hpp
@@ -182,7 +316,7 @@ SFML/Graphics/Color.hpp
 SFML/System/Vector2.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/VertexArray.hpp
+../3dparty/SFML/include/SFML/Graphics/VertexArray.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Vertex.hpp
@@ -196,7 +330,7 @@ SFML/Graphics/Drawable.hpp
 vector
 -
 
-../3dparty/sfml/include/SFML/Graphics/VertexBuffer.hpp
+../3dparty/SFML/include/SFML/Graphics/VertexBuffer.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/PrimitiveType.hpp
@@ -206,7 +340,7 @@ SFML/Graphics/Drawable.hpp
 SFML/Window/GlResource.hpp
 -
 
-../3dparty/sfml/include/SFML/Graphics/View.hpp
+../3dparty/SFML/include/SFML/Graphics/View.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Rect.hpp
@@ -216,73 +350,45 @@ SFML/Graphics/Transform.hpp
 SFML/System/Vector2.hpp
 -
 
-../3dparty/sfml/include/SFML/OpenGL.hpp
-SFML/Config.hpp
--
-windows.h
--
-GL/gl.h
--
-GLES/gl.h
--
-GLES/glext.h
--
-GL/gl.h
--
-OpenGL/gl.h
--
-OpenGLES/ES1/gl.h
--
-OpenGLES/ES1/glext.h
--
-GLES/gl.h
--
-GLES/glext.h
--
-GLES2/gl2platform.h
--
-GLES2/gl2ext.h
--
-
-../3dparty/sfml/include/SFML/System/Clock.hpp
+../3dparty/SFML/include/SFML/System/Clock.hpp
 SFML/System/Export.hpp
 -
 SFML/System/Time.hpp
 -
 
-../3dparty/sfml/include/SFML/System/Err.hpp
+../3dparty/SFML/include/SFML/System/Err.hpp
 SFML/System/Export.hpp
 -
 ostream
 -
 
-../3dparty/sfml/include/SFML/System/Export.hpp
+../3dparty/SFML/include/SFML/System/Export.hpp
 SFML/Config.hpp
 -
 
-../3dparty/sfml/include/SFML/System/InputStream.hpp
+../3dparty/SFML/include/SFML/System/InputStream.hpp
 SFML/Config.hpp
 -
 SFML/System/Export.hpp
 -
 
-../3dparty/sfml/include/SFML/System/Lock.hpp
+../3dparty/SFML/include/SFML/System/Lock.hpp
 SFML/System/Export.hpp
 -
 SFML/System/NonCopyable.hpp
 -
 
-../3dparty/sfml/include/SFML/System/Mutex.hpp
+../3dparty/SFML/include/SFML/System/Mutex.hpp
 SFML/System/Export.hpp
 -
 SFML/System/NonCopyable.hpp
 -
 
-../3dparty/sfml/include/SFML/System/NonCopyable.hpp
+../3dparty/SFML/include/SFML/System/NonCopyable.hpp
 SFML/System/Export.hpp
 -
 
-../3dparty/sfml/include/SFML/System/String.hpp
+../3dparty/SFML/include/SFML/System/String.hpp
 SFML/System/Export.hpp
 -
 SFML/System/Utf.hpp
@@ -296,13 +402,13 @@ string
 SFML/System/String.inl
 -
 
-../3dparty/sfml/include/SFML/System/String.inl
+../3dparty/SFML/include/SFML/System/String.inl
 
-../3dparty/sfml/include/SFML/System/Time.hpp
+../3dparty/SFML/include/SFML/System/Time.hpp
 SFML/System/Export.hpp
 -
 
-../3dparty/sfml/include/SFML/System/Utf.hpp
+../3dparty/SFML/include/SFML/System/Utf.hpp
 SFML/Config.hpp
 -
 algorithm
@@ -316,21 +422,21 @@ cstdlib
 SFML/System/Utf.inl
 -
 
-../3dparty/sfml/include/SFML/System/Utf.inl
+../3dparty/SFML/include/SFML/System/Utf.inl
 
-../3dparty/sfml/include/SFML/System/Vector2.hpp
+../3dparty/SFML/include/SFML/System/Vector2.hpp
 SFML/System/Vector2.inl
 -
 
-../3dparty/sfml/include/SFML/System/Vector2.inl
+../3dparty/SFML/include/SFML/System/Vector2.inl
 
-../3dparty/sfml/include/SFML/System/Vector3.hpp
+../3dparty/SFML/include/SFML/System/Vector3.hpp
 SFML/System/Vector3.inl
 -
 
-../3dparty/sfml/include/SFML/System/Vector3.inl
+../3dparty/SFML/include/SFML/System/Vector3.inl
 
-../3dparty/sfml/include/SFML/Window/Context.hpp
+../3dparty/SFML/include/SFML/Window/Context.hpp
 SFML/Window/Export.hpp
 -
 SFML/Window/GlResource.hpp
@@ -340,11 +446,11 @@ SFML/Window/ContextSettings.hpp
 SFML/System/NonCopyable.hpp
 -
 
-../3dparty/sfml/include/SFML/Window/ContextSettings.hpp
+../3dparty/SFML/include/SFML/Window/ContextSettings.hpp
 SFML/Config.hpp
 -
 
-../3dparty/sfml/include/SFML/Window/Cursor.hpp
+../3dparty/SFML/include/SFML/Window/Cursor.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/NonCopyable.hpp
@@ -352,32 +458,48 @@ SFML/System/NonCopyable.hpp
 SFML/System/Vector2.hpp
 -
 
-../3dparty/sfml/include/SFML/Window/Export.hpp
+../3dparty/SFML/include/SFML/Window/Export.hpp
 SFML/Config.hpp
 -
 
-../3dparty/sfml/include/SFML/Window/GlResource.hpp
+../3dparty/SFML/include/SFML/Window/GlResource.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/NonCopyable.hpp
 -
 
-../3dparty/sfml/include/SFML/Window/VideoMode.hpp
+../3dparty/SFML/include/SFML/Window/VideoMode.hpp
 SFML/Window/Export.hpp
 -
 vector
 -
 
-../3dparty/sfml/include/SFML/Window/Window.hpp
+../3dparty/SFML/include/SFML/Window/Vulkan.hpp
+SFML/Window/Export.hpp
+-
+SFML/Window/WindowHandle.hpp
+-
+vector
+-
+stdint.h
+-
+
+../3dparty/SFML/include/SFML/Window/Window.hpp
 SFML/Window/ContextSettings.hpp
 -
+SFML/Window/GlResource.hpp
+-
+SFML/Window/WindowBase.hpp
+-
+
+../3dparty/SFML/include/SFML/Window/WindowBase.hpp
 SFML/Window/Cursor.hpp
 -
 SFML/Window/Export.hpp
 -
-SFML/Window/GlResource.hpp
--
 SFML/Window/VideoMode.hpp
+-
+SFML/Window/Vulkan.hpp
 -
 SFML/Window/WindowHandle.hpp
 -
@@ -392,31 +514,39 @@ SFML/System/String.hpp
 SFML/System/Vector2.hpp
 -
 
-../3dparty/sfml/include/SFML/Window/WindowHandle.hpp
+../3dparty/SFML/include/SFML/Window/WindowHandle.hpp
 SFML/Config.hpp
 -
 
-../3dparty/sfml/include/SFML/Window/WindowStyle.hpp
+../3dparty/SFML/include/SFML/Window/WindowStyle.hpp
 
-../3dparty/sfml/src/SFML/Graphics/GLCheck.hpp
+../3dparty/SFML/src/SFML/Graphics/GLCheck.hpp
 SFML/Config.hpp
 -
 SFML/Graphics/GLExtensions.hpp
 -
 
-../3dparty/sfml/src/SFML/Graphics/GLExtensions.hpp
+../3dparty/SFML/src/SFML/Graphics/GLExtensions.hpp
 SFML/Config.hpp
 -
-SFML/OpenGL.hpp
--
-SFML/Graphics/GLLoader.hpp
+glad/gl.h
 -
 
-../3dparty/sfml/src/SFML/Graphics/RenderTextureImpl.hpp
+../3dparty/SFML/src/SFML/Graphics/ImageLoader.hpp
+SFML/System/NonCopyable.hpp
+-
+SFML/System/Vector2.hpp
+-
+string
+-
+vector
+-
+
+../3dparty/SFML/src/SFML/Graphics/RenderTextureImpl.hpp
 SFML/System/NonCopyable.hpp
 -
 
-../3dparty/sfml/src/SFML/Graphics/RenderTextureImplDefault.hpp
+../3dparty/SFML/src/SFML/Graphics/RenderTextureImplDefault.hpp
 SFML/Graphics/RenderTextureImpl.hpp
 -
 SFML/Window/GlResource.hpp
@@ -424,7 +554,7 @@ SFML/Window/GlResource.hpp
 SFML/Window/Context.hpp
 -
 
-../3dparty/sfml/src/SFML/Graphics/RenderTextureImplFBO.hpp
+../3dparty/SFML/src/SFML/Graphics/RenderTextureImplFBO.hpp
 SFML/Graphics/RenderTextureImpl.hpp
 -
 SFML/Window/Context.hpp
@@ -434,11 +564,11 @@ SFML/Window/GlResource.hpp
 map
 -
 
-../3dparty/sfml/src/SFML/Graphics/TextureSaver.hpp
+../3dparty/SFML/src/SFML/Graphics/TextureSaver.hpp
 SFML/Graphics/GLCheck.hpp
 -
 
-../3dparty/sfml/src/SFML/System/Android/ResourceStream.hpp
+../3dparty/SFML/src/SFML/System/Android/ResourceStream.hpp
 SFML/System/Export.hpp
 -
 SFML/System/InputStream.hpp
@@ -448,7 +578,33 @@ android/asset_manager.h
 string
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/Font.cpp
+../3dparty/sfml/extlibs/headers/freetype2/config/ftheader.h
+
+../3dparty/sfml/extlibs/headers/freetype2/ft2build.h
+config/ftheader.h
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/BlendMode.cpp
+SFML/Graphics/BlendMode.hpp
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/CircleShape.cpp
+SFML/Graphics/CircleShape.hpp
+-
+cmath
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Color.cpp
+SFML/Graphics/Color.hpp
+-
+algorithm
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/ConvexShape.cpp
+SFML/Graphics/ConvexShape.hpp
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Font.cpp
 SFML/Graphics/Font.hpp
 -
 SFML/Graphics/GLCheck.hpp
@@ -466,7 +622,7 @@ cstdlib
 cstring
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/GLCheck.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/GLCheck.cpp
 SFML/Graphics/GLCheck.hpp
 -
 SFML/System/Err.hpp
@@ -474,7 +630,7 @@ SFML/System/Err.hpp
 string
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/GLExtensions.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/GLExtensions.cpp
 SFML/Graphics/GLExtensions.hpp
 -
 SFML/Window/Context.hpp
@@ -482,7 +638,53 @@ SFML/Window/Context.hpp
 SFML/System/Err.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/RenderTarget.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Glsl.cpp
+SFML/Graphics/Glsl.hpp
+-
+algorithm
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Image.cpp
+SFML/Graphics/Image.hpp
+-
+SFML/Graphics/ImageLoader.hpp
+-
+SFML/System/Err.hpp
+-
+SFML/System/Android/ResourceStream.hpp
+-
+algorithm
+-
+cstring
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/ImageLoader.cpp
+SFML/Graphics/ImageLoader.hpp
+-
+SFML/System/InputStream.hpp
+-
+SFML/System/Err.hpp
+-
+stb_image.h
+-
+stb_image_write.h
+-
+cctype
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/RectangleShape.cpp
+SFML/Graphics/RectangleShape.hpp
+-
+cmath
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/RenderStates.cpp
+SFML/Graphics/RenderStates.hpp
+-
+cstddef
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/RenderTarget.cpp
 SFML/Graphics/RenderTarget.hpp
 -
 SFML/Graphics/Drawable.hpp
@@ -514,7 +716,21 @@ algorithm
 map
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/RenderTextureImplDefault.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/RenderTexture.cpp
+SFML/Graphics/RenderTexture.hpp
+-
+SFML/Graphics/RenderTextureImplFBO.hpp
+-
+SFML/Graphics/RenderTextureImplDefault.hpp
+-
+SFML/System/Err.hpp
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/RenderTextureImpl.cpp
+SFML/Graphics/RenderTextureImpl.hpp
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/RenderTextureImplDefault.cpp
 SFML/Graphics/RenderTextureImplDefault.hpp
 -
 SFML/Graphics/GLCheck.hpp
@@ -526,7 +742,7 @@ SFML/Window/Context.hpp
 SFML/System/Err.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/RenderTextureImplFBO.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/RenderTextureImplFBO.cpp
 SFML/Graphics/RenderTextureImplFBO.hpp
 -
 SFML/Graphics/Texture.hpp
@@ -544,7 +760,7 @@ utility
 set
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/RenderWindow.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/RenderWindow.cpp
 SFML/Graphics/RenderWindow.hpp
 -
 SFML/Graphics/Texture.hpp
@@ -554,7 +770,7 @@ SFML/Graphics/GLCheck.hpp
 SFML/Graphics/RenderTextureImplFBO.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/Shader.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Shader.cpp
 SFML/Graphics/Shader.hpp
 -
 SFML/Graphics/Texture.hpp
@@ -580,7 +796,39 @@ fstream
 vector
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/Texture.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Shape.cpp
+SFML/Graphics/Shape.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+SFML/System/Err.hpp
+-
+cmath
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Sprite.cpp
+SFML/Graphics/Sprite.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+cstdlib
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Text.cpp
+SFML/Graphics/Text.hpp
+-
+SFML/Graphics/Texture.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+cmath
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Texture.cpp
 SFML/Graphics/Texture.hpp
 -
 SFML/Graphics/Image.hpp
@@ -604,11 +852,33 @@ cassert
 cstring
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/TextureSaver.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/TextureSaver.cpp
 SFML/Graphics/TextureSaver.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/sfml/src/SFML/Graphics/VertexBuffer.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Transform.cpp
+SFML/Graphics/Transform.hpp
+-
+cmath
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Transformable.cpp
+SFML/Graphics/Transformable.hpp
+-
+cmath
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/Vertex.cpp
+SFML/Graphics/Vertex.hpp
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/VertexArray.cpp
+SFML/Graphics/VertexArray.hpp
+-
+SFML/Graphics/RenderTarget.hpp
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/VertexBuffer.cpp
 SFML/Graphics/VertexBuffer.hpp
 -
 SFML/Graphics/RenderTarget.hpp
@@ -624,5 +894,11 @@ SFML/System/Lock.hpp
 SFML/System/Err.hpp
 -
 cstring
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Graphics/View.cpp
+SFML/Graphics/View.hpp
+-
+cmath
 -
 

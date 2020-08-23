@@ -1,4 +1,4 @@
-# Install script for directory: /Users/snikolayen/mm/race00/app/src
+# Install script for directory: /Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

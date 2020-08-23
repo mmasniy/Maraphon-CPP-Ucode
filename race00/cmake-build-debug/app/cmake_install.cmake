@@ -1,4 +1,4 @@
-# Install script for directory: /Users/snikolayen/mm/race00/app
+# Install script for directory: /Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/snikolayen/mm/race00/cmake-build-debug/app/src/cmake_install.cmake")
+  include("/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/cmake-build-debug/app/src/cmake_install.cmake")
 
 endif()
 
