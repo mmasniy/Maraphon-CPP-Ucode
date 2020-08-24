@@ -1,4 +1,6 @@
 #include "snake.h"
+#include <cstdlib>
+#include <random>
 
 Block::Block(sf::Vector2<int> new_pos, sf::Color color) {
     box.setSize(sf::Vector2f(BOX_SIZE, BOX_SIZE));
@@ -12,12 +14,29 @@ Block::Block(sf::Vector2<int> new_pos, sf::Color color) {
 sf::RectangleShape Block::GetBox() {
     return box;
 }
-sf::RectangleShape & Block::GetBox_()  {
-    return box;
-}
 
 sf::Vector2<int> Block::GetPosition() {
     return position;
+}
+
+sf::Vector2<int> Snake::GetNextLocationForFood() {
+    srand(time(0));
+    bool food = true;
+    int x = 0, y = 0;
+    while (food) {
+        x = 1 + rand() % (screen->getSize().x - 1);
+        y =  1 + rand() % (screen->getSize().y - 1);
+        food = true;
+        for (auto& b : body) {
+            if (b.GetPosition().x == x && b.GetPosition().y == y) {
+                food = false;
+            }
+            if (food) {
+                return {x, y};
+            }
+        }
+    }
+    return {-5000, -5000};
 }
 
 Snake::Snake(sf::RenderWindow *window, sf::Color colorH, sf::Color colorB) {
@@ -27,13 +46,13 @@ Snake::Snake(sf::RenderWindow *window, sf::Color colorH, sf::Color colorB) {
     colorBody = colorB;
     colorHead = colorH;
 
-    int x = screen->getSize().x / 2;
-    int y = screen->getSize().y / 2;
+    int x = static_cast<int>(screen->getSize().x / 2);
+    int y = static_cast<int>(screen->getSize().y / 2);
     for (int i = 0; i < 4; ++i) {
         if (i != 3) {
             body.push_back({{x + BOX_SIZE * (i + 1), y}, colorBody});
         } else {
-            auto head = body.begin()->GetBox_();
+            auto head = body.begin()->GetBox();
             head.setFillColor(colorB);
             sf::Vector2<int> position = {x + BOX_SIZE * (i + 1), y};
             body.push_front({position, colorH});
@@ -54,9 +73,9 @@ bool Snake::DiedSnake() {
             && box.GetPosition().y == head.GetPosition().y);
     });
     return !(count != 0 || (screen->getSize().x
-        < static_cast<unsigned int>(head.GetPosition().x)
+        <= static_cast<unsigned int>(head.GetPosition().x)
         || head.GetPosition().x < 0 || screen->getSize().y
-        < static_cast<unsigned int>(head.GetPosition().y))
+        <= static_cast<unsigned int>(head.GetPosition().y))
         || head.GetPosition().y < 0);
 }
 
@@ -71,6 +90,30 @@ bool Snake::MoveSnake(sf::Vector2<int> direction) {
     }
     return true;
 }
+
 void Snake::AddBoxToTail(sf::Vector2<int> direction) {
-    body.push_back({{direction.x - 5000, direction.y - 5000}, sf::Color::Yellow});
+    body.push_back({{direction.x - 5000, direction.y - 5000}, colorBody});
+}
+
+bool Snake::AteFood(Fruit fd) {
+    if (fd.GetPositionFruit().x == body.front().GetPosition().x
+        && fd.GetPositionFruit().y == body.front().GetPosition().y) {
+        AddBoxToTail(body.back().GetPosition());
+        return true;
+    }
+    return false;
+}
+
+int Snake::SetFramerateLimit() {
+    int coefficient = body.size() / 10;
+    if (coefficient >= 2) {
+        FramerateLimit += 10;
+    } else if (coefficient >= 3) {
+        FramerateLimit += 5;
+    } else if (coefficient >= 4) {
+        FramerateLimit += 5;
+    } else if (coefficient >= 6) {
+        FramerateLimit += 10;
+    }
+    return FramerateLimit;
 }

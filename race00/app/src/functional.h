@@ -7,5 +7,6 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Config.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
+#include "fruit.h"
 
 sf::Vector2<int> RandomFruitGenerate(sf::Vector2<int> size_screen);

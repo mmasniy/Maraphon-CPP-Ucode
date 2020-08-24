@@ -1,4 +1,4 @@
-# Install script for directory: /Users/snikolayen/mm/race00
+# Install script for directory: /Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/snikolayen/mm/race00/cmake-build-debug/app/cmake_install.cmake")
-  include("/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/cmake_install.cmake")
+  include("/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/cmake-build-debug/app/cmake_install.cmake")
+  include("/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/cmake-build-debug/3dparty/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/snikolayen/mm/race00/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

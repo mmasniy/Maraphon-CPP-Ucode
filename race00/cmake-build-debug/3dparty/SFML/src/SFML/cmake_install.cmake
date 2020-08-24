@@ -1,4 +1,4 @@
-# Install script for directory: /Users/snikolayen/mm/race00/3dparty/SFML/src/SFML
+# Install script for directory: /Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,11 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/SFML/src/SFML/System/cmake_install.cmake")
-  include("/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/SFML/src/SFML/Window/cmake_install.cmake")
-  include("/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/SFML/src/SFML/Network/cmake_install.cmake")
-  include("/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/SFML/src/SFML/Graphics/cmake_install.cmake")
-  include("/Users/snikolayen/mm/race00/cmake-build-debug/3dparty/SFML/src/SFML/Audio/cmake_install.cmake")
+  include("/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/cmake-build-debug/3dparty/SFML/src/SFML/System/cmake_install.cmake")
+  include("/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/cmake-build-debug/3dparty/SFML/src/SFML/Window/cmake_install.cmake")
+  include("/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/cmake-build-debug/3dparty/SFML/src/SFML/Network/cmake_install.cmake")
+  include("/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/cmake-build-debug/3dparty/SFML/src/SFML/Graphics/cmake_install.cmake")
+  include("/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/cmake-build-debug/3dparty/SFML/src/SFML/Audio/cmake_install.cmake")
 
 endif()
 
