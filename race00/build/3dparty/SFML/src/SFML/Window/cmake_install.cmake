@@ -1,8 +1,8 @@
-# Install script for directory: /Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window
+# Install script for directory: /Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/Users/mmasniy/.brew")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,10 +32,15 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xbinx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/Users/snikolayen/mm/race00/build/3dparty/SFML/lib/libsfml-window.2.5.1.dylib"
-    "/Users/snikolayen/mm/race00/build/3dparty/SFML/lib/libsfml-window.2.5.dylib"
+    "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/3dparty/SFML/lib/libsfml-window.2.5.1.dylib"
+    "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/3dparty/SFML/lib/libsfml-window.2.5.dylib"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsfml-window.2.5.1.dylib"
@@ -44,10 +49,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xbinx" OR NOT CMAKE_INSTALL_COMPONEN
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
       execute_process(COMMAND /usr/bin/install_name_tool
-        -delete_rpath "/Users/snikolayen/mm/race00/3dparty/SFML_LIBRARY_DIR"
+        -delete_rpath "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML_LIBRARY_DIR"
         "${file}")
       execute_process(COMMAND /usr/bin/install_name_tool
-        -delete_rpath "/Users/snikolayen/mm/race00/build/3dparty/SFML/lib"
+        -delete_rpath "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/3dparty/SFML/lib"
         "${file}")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -x "${file}")
@@ -57,14 +62,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xbinx" OR NOT CMAKE_INSTALL_COMPONEN
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xbinx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/snikolayen/mm/race00/build/3dparty/SFML/lib/libsfml-window.dylib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/3dparty/SFML/lib/libsfml-window.dylib")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsfml-window.dylib" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsfml-window.dylib")
     execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/snikolayen/mm/race00/3dparty/SFML_LIBRARY_DIR"
+      -delete_rpath "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML_LIBRARY_DIR"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsfml-window.dylib")
     execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/snikolayen/mm/race00/build/3dparty/SFML/lib"
+      -delete_rpath "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/3dparty/SFML/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsfml-window.dylib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libsfml-window.dylib")

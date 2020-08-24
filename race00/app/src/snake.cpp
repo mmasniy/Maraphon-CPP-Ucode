@@ -3,6 +3,7 @@
 #include <random>
 #include <chrono>
 
+
 Block::Block(sf::Vector2<int> new_pos, sf::Color color) {
     box.setSize(sf::Vector2f(BOX_SIZE, BOX_SIZE));
     box.setPosition(new_pos.x, new_pos.y);
@@ -100,14 +101,10 @@ void Snake::AddBoxToTail(sf::Vector2<int> direction) {
 }
 
 bool Snake::AteFood() {
-    std::cout << "SIZE " << body.size() << std::endl;
     if (fruit.GetFruitBody().getGlobalBounds().intersects(body.front().GetBox().getGlobalBounds())) {
         AddBoxToTail(body.back().GetPosition());
-//        fruit.SetPosition(GetNextLocationForFood());
-        std::cout << "fruit.GetPositionFruit() = x : " << std::endl;
         return true;
     }
-    std::cerr << "FFFFAAAAALLLLLLSSSSSSS" << std::endl;
     return false;
 }
 int Snake::GetSnakeSize() {
@@ -116,12 +113,11 @@ int Snake::GetSnakeSize() {
 void Snake::DeleteBox() {
     body.pop_back();
 }
-void Snake::DrawFruit() {
-    std::cerr << "Start = " << fruit.GetPositionFruit().x << " " << fruit.GetPositionFruit().y << std::endl;
+void Snake::DrawFruit(Player& player) {
     if (AteFood()) {
+        player.score += GetFruit().GetScore();
         fruit.SetPosition(GetNextLocationForFood());
     }
-    std::cerr << "Finish = " << fruit.GetPositionFruit().x << " " << fruit.GetPositionFruit().y << std::endl;
     fruit.DrawFruit();
 }
 Fruit &Snake::GetFruit() {

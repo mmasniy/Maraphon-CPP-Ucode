@@ -378,7 +378,7 @@ string
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/ALCheck.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/ALCheck.cpp
 SFML/Audio/ALCheck.hpp
 -
 SFML/System/Err.hpp
@@ -386,7 +386,7 @@ SFML/System/Err.hpp
 string
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/AlResource.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/AlResource.cpp
 SFML/Audio/AlResource.hpp
 -
 SFML/Audio/AudioDevice.hpp
@@ -396,7 +396,7 @@ SFML/System/Mutex.hpp
 SFML/System/Lock.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/AudioDevice.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/AudioDevice.cpp
 SFML/Audio/AudioDevice.hpp
 -
 SFML/Audio/ALCheck.hpp
@@ -408,7 +408,7 @@ SFML/System/Err.hpp
 vector
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/InputSoundFile.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/InputSoundFile.cpp
 SFML/Audio/InputSoundFile.hpp
 -
 SFML/Audio/SoundFileReader.hpp
@@ -424,13 +424,13 @@ SFML/System/MemoryInputStream.hpp
 SFML/System/Err.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/Listener.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/Listener.cpp
 SFML/Audio/Listener.hpp
 -
 SFML/Audio/AudioDevice.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/Music.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/Music.cpp
 SFML/Audio/Music.hpp
 -
 SFML/Audio/ALCheck.hpp
@@ -442,7 +442,7 @@ SFML/System/Err.hpp
 fstream
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/OutputSoundFile.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/OutputSoundFile.cpp
 SFML/Audio/OutputSoundFile.hpp
 -
 SFML/Audio/SoundFileWriter.hpp
@@ -450,7 +450,7 @@ SFML/Audio/SoundFileWriter.hpp
 SFML/Audio/SoundFileFactory.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/Sound.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/Sound.cpp
 SFML/Audio/Sound.hpp
 -
 SFML/Audio/SoundBuffer.hpp
@@ -458,7 +458,7 @@ SFML/Audio/SoundBuffer.hpp
 SFML/Audio/ALCheck.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundBuffer.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundBuffer.cpp
 SFML/Audio/SoundBuffer.hpp
 -
 SFML/Audio/InputSoundFile.hpp
@@ -476,7 +476,7 @@ SFML/System/Err.hpp
 memory
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundBufferRecorder.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundBufferRecorder.cpp
 SFML/Audio/SoundBufferRecorder.hpp
 -
 algorithm
@@ -484,7 +484,7 @@ algorithm
 iterator
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundFileFactory.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundFileFactory.cpp
 SFML/Audio/SoundFileFactory.hpp
 -
 SFML/Audio/SoundFileReaderFlac.hpp
@@ -506,7 +506,7 @@ SFML/System/MemoryInputStream.hpp
 SFML/System/Err.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundFileReaderFlac.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundFileReaderFlac.cpp
 SFML/Audio/SoundFileReaderFlac.hpp
 -
 SFML/System/InputStream.hpp
@@ -516,7 +516,7 @@ SFML/System/Err.hpp
 cassert
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundFileReaderOgg.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundFileReaderOgg.cpp
 SFML/Audio/SoundFileReaderOgg.hpp
 -
 SFML/System/MemoryInputStream.hpp
@@ -530,7 +530,7 @@ cctype
 cassert
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundFileReaderWav.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundFileReaderWav.cpp
 SFML/Audio/SoundFileReaderWav.hpp
 -
 SFML/System/InputStream.hpp
@@ -546,7 +546,7 @@ cassert
 cstring
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundFileWriterFlac.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundFileWriterFlac.cpp
 SFML/Audio/SoundFileWriterFlac.hpp
 -
 SFML/System/Err.hpp
@@ -558,7 +558,7 @@ cctype
 cassert
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundFileWriterOgg.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundFileWriterOgg.cpp
 SFML/Audio/SoundFileWriterOgg.hpp
 -
 SFML/System/Err.hpp
@@ -572,7 +572,7 @@ cstdlib
 cassert
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundFileWriterWav.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundFileWriterWav.cpp
 SFML/Audio/SoundFileWriterWav.hpp
 -
 SFML/System/Err.hpp
@@ -584,7 +584,7 @@ cctype
 cassert
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundRecorder.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundRecorder.cpp
 SFML/Audio/SoundRecorder.hpp
 -
 SFML/Audio/AudioDevice.hpp
@@ -600,13 +600,13 @@ cstring
 cassert
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundSource.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundSource.cpp
 SFML/Audio/SoundSource.hpp
 -
 SFML/Audio/ALCheck.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Audio/SoundStream.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Audio/SoundStream.cpp
 SFML/Audio/SoundStream.hpp
 -
 SFML/Audio/AudioDevice.hpp

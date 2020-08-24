@@ -5,13 +5,26 @@
 
 //sf::Clock::chrono;
 
+void DrawScore(sf::RenderWindow* window, Player& player) {
+    sf::Text text;
+    sf::Font font;
+    if (!font.loadFromFile("ArialBold.ttf")) {}
+    text.setFont(font);
+    text.setCharacterSize(30);
+    sf::Color font_color(sf::Color::White);
+    text.setPosition(0, 0);
+    text.setColor(font_color);
+    text.setString("Score: " + std::to_string(player.score));
+    window->draw(text);
+}
+
 Game::Game(sf::RenderWindow *w,
            sf::Color colorHead,
            sf::Color colorBody,
            Player &player_, Fruit& fruit)
     : snake(w, colorHead, colorBody, fruit), player(player_) {
     seconds = 0;
-    delay = 0.04;
+    delay = 0.07;
     screen = w;
 }
 
@@ -53,11 +66,13 @@ void Game::LoopIvent() {
         sf::Event event{};
         while (screen->pollEvent(event)) {
             MoveSnakeOnMap(event, direction);
-            if (event.key.code == sf::Keyboard::Escape) {
-                screen->close();
-            } else if (event.key.code == sf::Keyboard::Space) {
+            if (event.key.code == sf::Keyboard::Space) {
                 player.score += snake.GetFruit().GetScore();
                 snake.AddBoxToTail(direction);
+            } else if (event.key.code == sf::Keyboard::LShift) {
+                delay = 0.069999999;
+            } else if (event.key.code == sf::Keyboard::LControl) {
+                delay = 0.08;
             }
         }
         if(delay < 0.07) {
@@ -69,7 +84,6 @@ void Game::LoopIvent() {
             }
             chrono.restart();
         }
-
         if(chrono_delete_snake.getElapsedTime().asSeconds() > 1) {
             seconds +=1;
             if(seconds == 4) {
@@ -78,7 +92,8 @@ void Game::LoopIvent() {
             }
             chrono_delete_snake.restart();
         }
-        snake.DrawFruit();
+        snake.DrawFruit(player);
+        DrawScore(screen, player);
         screen->display();
     }
 }

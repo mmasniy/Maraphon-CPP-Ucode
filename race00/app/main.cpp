@@ -20,9 +20,8 @@ void game_start (sf::RenderWindow* window, Player& player) {
 
 void show_Show_LeaderBoard(sf::RenderWindow* window, Menu& main) {
     sf::Event event;
-//    std::cout << window->isOpen() << std::endl;
+
     while (!window->pollEvent(event)) {
-//        std::cout << "run function show_Show_LeaderBoard\n" << std::endl;
         window->clear();
         sf::Text text;
         sf::Font font;

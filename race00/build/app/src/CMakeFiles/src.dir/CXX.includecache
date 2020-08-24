@@ -692,41 +692,31 @@ SFML/Config.hpp
 
 ../3dparty/SFML/include/SFML/Window/WindowStyle.hpp
 
-/Users/snikolayen/mm/race00/app/src/Game.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/Game.cpp
 Game.h
-/Users/snikolayen/mm/race00/app/src/Game.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/Game.h
 fruit.h
-/Users/snikolayen/mm/race00/app/src/fruit.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/fruit.h
 cstdlib
 -
 chrono
 -
 
-/Users/snikolayen/mm/race00/app/src/Game.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/Game.h
 random
 -
 list
 -
 snake.h
-/Users/snikolayen/mm/race00/app/src/snake.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/snake.h
 menu.h
-/Users/snikolayen/mm/race00/app/src/menu.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/menu.h
 
-/Users/snikolayen/mm/race00/app/src/fruit.cpp
-fruit.h
-/Users/snikolayen/mm/race00/app/src/fruit.h
-iostream
--
-
-/Users/snikolayen/mm/race00/app/src/fruit.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/fruit.h
 functional.h
-/Users/snikolayen/mm/race00/app/src/functional.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/functional.h
 
-/Users/snikolayen/mm/race00/app/src/functional.cpp
-functional.h
-/Users/snikolayen/mm/race00/app/src/functional.h
-
-/Users/snikolayen/mm/race00/app/src/functional.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/functional.h
 SFML/Window.hpp
 -
 SFML/Window/Window.hpp
@@ -742,15 +732,15 @@ SFML/Config.hpp
 SFML/Graphics/RenderWindow.hpp
 -
 fruit.h
-/Users/snikolayen/mm/race00/app/src/fruit.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/fruit.h
 
-/Users/snikolayen/mm/race00/app/src/menu.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/menu.h
 SFML/Graphics/RenderWindow.hpp
 -
 
-/Users/snikolayen/mm/race00/app/src/snake.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/snake.cpp
 snake.h
-/Users/snikolayen/mm/race00/app/src/snake.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/snake.h
 cstdlib
 -
 random
@@ -758,7 +748,7 @@ random
 chrono
 -
 
-/Users/snikolayen/mm/race00/app/src/snake.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/snake.h
 iostream
 -
 map
@@ -768,5 +758,7 @@ list
 deque
 -
 functional.h
-/Users/snikolayen/mm/race00/app/src/functional.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/functional.h
+menu.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/menu.h
 

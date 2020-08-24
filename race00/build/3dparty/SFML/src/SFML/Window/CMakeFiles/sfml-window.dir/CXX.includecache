@@ -914,7 +914,7 @@ SFML/Window/WindowImpl.hpp
 SFML/Window/iOS/ObjCType.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/Clipboard.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/Clipboard.cpp
 SFML/Window/Clipboard.hpp
 -
 SFML/Window/ClipboardImpl.hpp
@@ -922,7 +922,7 @@ SFML/Window/ClipboardImpl.hpp
 SFML/System/String.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/Context.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/Context.cpp
 SFML/Window/Context.hpp
 -
 SFML/Window/GlContext.hpp
@@ -930,13 +930,13 @@ SFML/Window/GlContext.hpp
 SFML/System/ThreadLocalPtr.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/Cursor.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/Cursor.cpp
 SFML/Window/Cursor.hpp
 -
 SFML/Window/CursorImpl.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/EGLCheck.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/EGLCheck.cpp
 SFML/Window/EGLCheck.hpp
 -
 SFML/System/Err.hpp
@@ -944,7 +944,7 @@ SFML/System/Err.hpp
 glad/egl.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/EglContext.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/EglContext.cpp
 SFML/Window/EglContext.hpp
 -
 SFML/Window/WindowImpl.hpp
@@ -964,7 +964,7 @@ X11/Xlib.h
 glad/egl.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/GlContext.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/GlContext.cpp
 SFML/Window/GlContext.hpp
 -
 SFML/Window/Context.hpp
@@ -1008,29 +1008,29 @@ SFML/Window/OSX/SFContext.hpp
 SFML/Window/iOS/EaglContext.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/GlResource.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/GlResource.cpp
 SFML/Window/GlResource.hpp
 -
 SFML/Window/GlContext.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/Joystick.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/Joystick.cpp
 SFML/Window/Joystick.hpp
 -
 SFML/Window/JoystickManager.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/JoystickManager.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/JoystickManager.cpp
 SFML/Window/JoystickManager.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/Keyboard.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/Keyboard.cpp
 SFML/Window/Keyboard.hpp
 -
 SFML/Window/InputImpl.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/Mouse.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/Mouse.cpp
 SFML/Window/Mouse.hpp
 -
 SFML/Window/InputImpl.hpp
@@ -1038,7 +1038,7 @@ SFML/Window/InputImpl.hpp
 SFML/Window/Window.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/AutoreleasePoolWrapper.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/AutoreleasePoolWrapper.mm
 cassert
 -
 pthread.h
@@ -1048,13 +1048,13 @@ SFML/Window/OSX/AutoreleasePoolWrapper.h
 Foundation/Foundation.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/ClipboardImpl.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/ClipboardImpl.mm
 SFML/Window/OSX/ClipboardImpl.hpp
 -
 AppKit/AppKit.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/CursorImpl.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/CursorImpl.mm
 SFML/Window/OSX/CursorImpl.hpp
 -
 SFML/Window/OSX/AutoreleasePoolWrapper.h
@@ -1064,7 +1064,7 @@ SFML/Window/OSX/NSImage+raw.h
 AppKit/AppKit.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/HIDInputManager.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/HIDInputManager.mm
 SFML/Window/OSX/HIDInputManager.hpp
 -
 SFML/System/Err.hpp
@@ -1072,13 +1072,13 @@ SFML/System/Err.hpp
 AppKit/AppKit.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/HIDJoystickManager.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/HIDJoystickManager.cpp
 SFML/Window/OSX/HIDInputManager.hpp
 -
 SFML/Window/OSX/HIDJoystickManager.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/InputImpl.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/InputImpl.mm
 SFML/Window/VideoMode.hpp
 -
 SFML/Window/Window.hpp
@@ -1094,7 +1094,7 @@ SFML/Window/OSX/SFOpenGLView.h
 AppKit/AppKit.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/JoystickImpl.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/JoystickImpl.cpp
 SFML/Window/JoystickImpl.hpp
 -
 SFML/Window/OSX/HIDInputManager.hpp
@@ -1104,11 +1104,11 @@ SFML/Window/OSX/HIDJoystickManager.hpp
 SFML/System/Err.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/NSImage+raw.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/NSImage+raw.mm
 SFML/Window/OSX/NSImage+raw.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/SFContext.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/SFContext.mm
 SFML/Window/OSX/SFContext.hpp
 -
 SFML/Window/OSX/WindowImplCocoa.hpp
@@ -1122,13 +1122,13 @@ stdint.h
 SFML/Window/OSX/AutoreleasePoolWrapper.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/SFKeyboardModifiersHelper.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/SFKeyboardModifiersHelper.mm
 SFML/Window/OSX/WindowImplCocoa.hpp
 -
 SFML/Window/OSX/SFKeyboardModifiersHelper.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/SFOpenGLView+keyboard.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/SFOpenGLView+keyboard.mm
 SFML/Window/OSX/WindowImplCocoa.hpp
 -
 SFML/Window/OSX/HIDInputManager.hpp
@@ -1140,7 +1140,7 @@ SFML/Window/OSX/SFOpenGLView.h
 SFML/Window/OSX/SFOpenGLView+keyboard_priv.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/SFOpenGLView+mouse.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/SFOpenGLView+mouse.mm
 SFML/Window/OSX/WindowImplCocoa.hpp
 -
 cmath
@@ -1150,7 +1150,7 @@ SFML/Window/OSX/SFOpenGLView.h
 SFML/Window/OSX/SFOpenGLView+mouse_priv.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/SFOpenGLView.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/SFOpenGLView.mm
 SFML/Window/OSX/WindowImplCocoa.hpp
 -
 SFML/System/Err.hpp
@@ -1162,7 +1162,7 @@ SFML/Window/OSX/SFOpenGLView+mouse_priv.h
 SFML/Window/OSX/SFSilentResponder.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/SFViewController.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/SFViewController.mm
 SFML/System/Err.hpp
 -
 SFML/Window/OSX/WindowImplCocoa.hpp
@@ -1174,7 +1174,7 @@ SFML/Window/OSX/SFOpenGLView.h
 SFML/Window/OSX/SFViewController.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/SFWindowController.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/SFWindowController.mm
 SFML/Window/VideoMode.hpp
 -
 SFML/Window/WindowHandle.hpp
@@ -1204,11 +1204,11 @@ SFML/Window/OSX/SFWindowController.h
 OpenGL/OpenGL.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/SensorImpl.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/SensorImpl.cpp
 SFML/Window/SensorImpl.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/VideoModeImpl.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/VideoModeImpl.cpp
 SFML/Window/VideoModeImpl.hpp
 -
 SFML/Window/OSX/cg_sf_conversion.hpp
@@ -1218,7 +1218,7 @@ SFML/System/Err.hpp
 algorithm
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/WindowImplCocoa.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/WindowImplCocoa.mm
 SFML/Window/OSX/WindowImplCocoa.hpp
 -
 SFML/System/Err.hpp
@@ -1240,7 +1240,7 @@ SFML/Window/OSX/SFViewController.h
 SFML/Window/OSX/SFWindowController.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/cg_sf_conversion.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/cg_sf_conversion.mm
 SFML/Window/OSX/cg_sf_conversion.hpp
 -
 SFML/System/Err.hpp
@@ -1248,7 +1248,7 @@ SFML/System/Err.hpp
 SFML/Window/OSX/Scaling.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/OSX/cpp_objc_conversion.mm
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/OSX/cpp_objc_conversion.mm
 SFML/System/Utf.hpp
 -
 SFML/Window/OSX/cpp_objc_conversion.h
@@ -1256,25 +1256,25 @@ SFML/Window/OSX/cpp_objc_conversion.h
 Foundation/Foundation.h
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/Sensor.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/Sensor.cpp
 SFML/Window/Sensor.hpp
 -
 SFML/Window/SensorManager.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/SensorManager.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/SensorManager.cpp
 SFML/Window/SensorManager.hpp
 -
 SFML/System/Err.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/Touch.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/Touch.cpp
 SFML/Window/Touch.hpp
 -
 SFML/Window/InputImpl.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/VideoMode.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/VideoMode.cpp
 SFML/Window/VideoMode.hpp
 -
 SFML/Window/VideoModeImpl.hpp
@@ -1284,7 +1284,7 @@ algorithm
 functional
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/Vulkan.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/Vulkan.cpp
 SFML/Window/Vulkan.hpp
 -
 SFML/Window/Win32/VulkanImplWin32.hpp
@@ -1292,7 +1292,7 @@ SFML/Window/Win32/VulkanImplWin32.hpp
 SFML/Window/Unix/VulkanImplX11.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/Window.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/Window.cpp
 SFML/Window/Window.hpp
 -
 SFML/Window/GlContext.hpp
@@ -1304,7 +1304,7 @@ SFML/System/Sleep.hpp
 SFML/System/Err.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/WindowBase.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/WindowBase.cpp
 SFML/Window/WindowBase.hpp
 -
 SFML/Window/ContextSettings.hpp
@@ -1314,7 +1314,7 @@ SFML/Window/WindowImpl.hpp
 SFML/System/Err.hpp
 -
 
-/Users/snikolayen/mm/race00/3dparty/SFML/src/SFML/Window/WindowImpl.cpp
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/3dparty/SFML/src/SFML/Window/WindowImpl.cpp
 SFML/Window/WindowImpl.hpp
 -
 SFML/Window/Event.hpp

@@ -4,7 +4,7 @@
 #include <list>
 #include <deque>
 #include "functional.h"
-
+#include "menu.h"
 #define BOX_SIZE 40
 
 class Block {
@@ -30,10 +30,9 @@ public:
     void AddBoxToTail(sf::Vector2<int> direction);
     sf::Vector2<int> GetNextLocationForFood();
     bool AteFood();
-//    int SetFramerateLimit();
     int GetSnakeSize();
     void DeleteBox();
-    void DrawFruit();
+    void DrawFruit(Player& player);
     Fruit& GetFruit();
 
 private:

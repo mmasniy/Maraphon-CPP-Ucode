@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/snikolayen/mm/race00/app/src/Game.cpp" "/Users/snikolayen/mm/race00/build/app/src/CMakeFiles/src.dir/Game.cpp.o"
-  "/Users/snikolayen/mm/race00/app/src/fruit.cpp" "/Users/snikolayen/mm/race00/build/app/src/CMakeFiles/src.dir/fruit.cpp.o"
-  "/Users/snikolayen/mm/race00/app/src/functional.cpp" "/Users/snikolayen/mm/race00/build/app/src/CMakeFiles/src.dir/functional.cpp.o"
-  "/Users/snikolayen/mm/race00/app/src/menu.cpp" "/Users/snikolayen/mm/race00/build/app/src/CMakeFiles/src.dir/menu.cpp.o"
-  "/Users/snikolayen/mm/race00/app/src/snake.cpp" "/Users/snikolayen/mm/race00/build/app/src/CMakeFiles/src.dir/snake.cpp.o"
+  "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/Game.cpp" "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/app/src/CMakeFiles/src.dir/Game.cpp.o"
+  "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/fruit.cpp" "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/app/src/CMakeFiles/src.dir/fruit.cpp.o"
+  "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/functional.cpp" "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/app/src/CMakeFiles/src.dir/functional.cpp.o"
+  "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/menu.cpp" "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/app/src/CMakeFiles/src.dir/menu.cpp.o"
+  "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/app/src/snake.cpp" "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/app/src/CMakeFiles/src.dir/snake.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -24,9 +24,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/snikolayen/mm/race00/build/3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/DependInfo.cmake"
-  "/Users/snikolayen/mm/race00/build/3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/DependInfo.cmake"
-  "/Users/snikolayen/mm/race00/build/3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/DependInfo.cmake"
+  "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/DependInfo.cmake"
+  "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/DependInfo.cmake"
+  "/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/race00/build/3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
