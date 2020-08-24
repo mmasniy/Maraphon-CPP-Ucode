@@ -38,7 +38,7 @@ void Game::LoadResources() {
     snake.DrawSnake();
 }
 
-void MoveSnakeOnMap(sf::Event &event, sf::Vector2<int> &direction) {
+void Game::MoveSnakeOnMap(sf::Event &event, sf::Vector2<int> &direction) {
     if (event.type == sf::Event::KeyReleased) {
         if (event.key.code == sf::Keyboard::Up && direction.y != 1) {
             direction.y = -1;
@@ -56,6 +56,43 @@ void MoveSnakeOnMap(sf::Event &event, sf::Vector2<int> &direction) {
     }
 }
 
+bool Game::WorkWithChrono(double& delay, sf::Clock& chrono, Snake& snake, sf::Vector2<int> direction) {
+    bool flag = true;
+    if(delay < 0.07) {
+        delay = 0.00001 + ((snake.GetSnakeSize() - 1) * (0.003));
+//        Update_delay(delay);
+    }
+    if(chrono.getElapsedTime().asSeconds() > delay) {
+        if (snake.MoveSnake(direction) || snake.GetSnakeSize() < 2) {
+            flag = false;
+        }
+        chrono.restart();
+    }
+    return flag;
+}
+
+void Game::Game_Chrono(sf::Clock& chrono_delete_snake, int& seconds, Snake& snake) {
+    if(chrono_delete_snake.getElapsedTime().asSeconds() > 1) {
+        seconds +=1;
+        if(seconds == 4) {
+            seconds = 0;
+            snake.DeleteBox();
+        }
+        chrono_delete_snake.restart();
+    }
+}
+
+void Game::WorkWithKey(sf::Event &event, Snake& snake, sf::Vector2<int> direction, double& delay, Player& player) {
+    if (event.key.code == sf::Keyboard::Space) {
+        player.score += snake.GetFruit().GetScore();
+        snake.AddBoxToTail(direction);
+    } else if (event.key.code == sf::Keyboard::LShift) {
+        delay = 0.069999999;
+    } else if (event.key.code == sf::Keyboard::LControl) {
+        delay = 0.08;
+    }
+}
+
 void Game::LoopIvent() {
     player.score = 20;
     sf::Vector2<int> direction(-1, 0);
@@ -66,39 +103,14 @@ void Game::LoopIvent() {
         sf::Event event{};
         while (screen->pollEvent(event)) {
             MoveSnakeOnMap(event, direction);
-            if (event.key.code == sf::Keyboard::Space) {
-                player.score += snake.GetFruit().GetScore();
-                snake.AddBoxToTail(direction);
-            } else if (event.key.code == sf::Keyboard::LShift) {
-                delay = 0.069999999;
-            } else if (event.key.code == sf::Keyboard::LControl) {
-                delay = 0.08;
-            }
+            WorkWithKey(event, snake, direction, delay, player);
         }
-        if(delay < 0.07) {
-            Update_delay(delay);
-        }
-        if(chrono.getElapsedTime().asSeconds() > delay) {
-            if (snake.MoveSnake(direction) || snake.GetSnakeSize() < 2) {
-                flag = false;
-            }
-            chrono.restart();
-        }
-        if(chrono_delete_snake.getElapsedTime().asSeconds() > 1) {
-            seconds +=1;
-            if(seconds == 4) {
-                seconds = 0;
-                snake.DeleteBox();
-            }
-            chrono_delete_snake.restart();
-        }
+        flag = WorkWithChrono(delay, chrono, snake, direction);
+        Game_Chrono(chrono_delete_snake, seconds, snake);
         snake.DrawFruit(player);
         DrawScore(screen, player);
         screen->display();
     }
 }
 
-void Game::Update_delay(double &delay) {
-    delay = 0.00001 + ((snake.GetSnakeSize() - 1) * (0.003));
-}
 
