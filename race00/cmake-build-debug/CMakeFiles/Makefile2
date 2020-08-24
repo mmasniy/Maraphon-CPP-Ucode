@@ -94,8 +94,8 @@ app/preinstall: app/src/preinstall
 # Target rules for target app/CMakeFiles/race00.dir
 
 # All Build rule for target.
-app/CMakeFiles/race00.dir/all: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 app/CMakeFiles/race00.dir/all: app/src/CMakeFiles/src.dir/all
+app/CMakeFiles/race00.dir/all: 3dparty/SFML/src/SFML/System/CMakeFiles/sfml-system.dir/all
 app/CMakeFiles/race00.dir/all: 3dparty/SFML/src/SFML/Window/CMakeFiles/sfml-window.dir/all
 app/CMakeFiles/race00.dir/all: 3dparty/SFML/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 	$(MAKE) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/depend

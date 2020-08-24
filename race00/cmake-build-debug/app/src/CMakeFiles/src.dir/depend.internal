@@ -80,6 +80,7 @@ app/src/CMakeFiles/src.dir/Game.cpp.o
  ../3dparty/SFML/include/SFML/Window/WindowStyle.hpp
  /Users/snikolayen/mm/race00/app/src/Game.cpp
  /Users/snikolayen/mm/race00/app/src/Game.h
+ /Users/snikolayen/mm/race00/app/src/fruit.h
  /Users/snikolayen/mm/race00/app/src/functional.h
  /Users/snikolayen/mm/race00/app/src/menu.h
  /Users/snikolayen/mm/race00/app/src/snake.h
@@ -240,6 +241,7 @@ app/src/CMakeFiles/src.dir/functional.cpp.o
  ../3dparty/SFML/include/SFML/Window/WindowBase.hpp
  ../3dparty/SFML/include/SFML/Window/WindowHandle.hpp
  ../3dparty/SFML/include/SFML/Window/WindowStyle.hpp
+ /Users/snikolayen/mm/race00/app/src/fruit.h
  /Users/snikolayen/mm/race00/app/src/functional.cpp
  /Users/snikolayen/mm/race00/app/src/functional.h
 app/src/CMakeFiles/src.dir/menu.cpp.o
@@ -396,6 +398,7 @@ app/src/CMakeFiles/src.dir/snake.cpp.o
  ../3dparty/SFML/include/SFML/Window/WindowBase.hpp
  ../3dparty/SFML/include/SFML/Window/WindowHandle.hpp
  ../3dparty/SFML/include/SFML/Window/WindowStyle.hpp
+ /Users/snikolayen/mm/race00/app/src/fruit.h
  /Users/snikolayen/mm/race00/app/src/functional.h
  /Users/snikolayen/mm/race00/app/src/snake.cpp
  /Users/snikolayen/mm/race00/app/src/snake.h

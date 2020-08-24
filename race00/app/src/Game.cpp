@@ -1,5 +1,7 @@
 #include "Game.h"
-
+#include "fruit.h"
+#include <stdlib.h>
+#include <chrono>
 
 Game::Game(sf::RenderWindow *w,
            sf::Color colorHead,
@@ -42,8 +44,11 @@ void Game::LoopIvent() {
     sf::Vector2<int> direction(-1, 0);
     bool flag = true;
     while (screen->isOpen() && flag) {
+        Fruit fruit(screen, snake.GetNextLocationForFood(), (1 + (rand() % 50)));
+        fruit.CreateFruit(snake.GetNextLocationForFood());
+        fruit.DrawFruit();
         LoadResources();
-        sf::Event event;
+        sf::Event event{};
         while (screen->pollEvent(event)) {
             MoveSnakeOnMap(event, direction);
             if (event.key.code == sf::Keyboard::Escape) {
@@ -56,7 +61,11 @@ void Game::LoopIvent() {
         if (snake.MoveSnake(direction)) {
             flag = false;
         }
+        if (snake.AteFood(fruit)) {
+            fruit.CreateFruit(snake.GetNextLocationForFood());
+            fruit.DrawFruit();
+        }
         screen->display();
-        screen->setFramerateLimit(15);
+        screen->setFramerateLimit(20);
     }
 }

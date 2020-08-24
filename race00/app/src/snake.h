@@ -12,7 +12,7 @@ class Block {
     Block(sf::Vector2<int> new_pos, sf::Color color);
     sf::Vector2<int> GetPosition();
     sf::RectangleShape GetBox();
-    sf::RectangleShape& GetBox_();
+
     private:
     sf::Vector2<int> position;
     sf::RectangleShape box;
@@ -25,9 +25,12 @@ public:
     bool MoveSnake(sf::Vector2<int> direction);
     bool DiedSnake();
     void AddBoxToTail(sf::Vector2<int> direction);
-//    bool AteFood(Food *fd);
+    sf::Vector2<int> GetNextLocationForFood();
+    bool AteFood(Fruit fd);
+    int SetFramerateLimit();
 
 private:
+    int FramerateLimit = 60;
     sf::RenderWindow *screen;
     float movementScale;
     int snake_length;

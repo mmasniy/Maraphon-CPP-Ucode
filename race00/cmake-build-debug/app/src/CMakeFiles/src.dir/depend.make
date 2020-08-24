@@ -79,6 +79,7 @@ app/src/CMakeFiles/src.dir/Game.cpp.o: ../3dparty/SFML/include/SFML/Window/Windo
 app/src/CMakeFiles/src.dir/Game.cpp.o: ../3dparty/SFML/include/SFML/Window/WindowStyle.hpp
 app/src/CMakeFiles/src.dir/Game.cpp.o: ../app/src/Game.cpp
 app/src/CMakeFiles/src.dir/Game.cpp.o: ../app/src/Game.h
+app/src/CMakeFiles/src.dir/Game.cpp.o: ../app/src/fruit.h
 app/src/CMakeFiles/src.dir/Game.cpp.o: ../app/src/functional.h
 app/src/CMakeFiles/src.dir/Game.cpp.o: ../app/src/menu.h
 app/src/CMakeFiles/src.dir/Game.cpp.o: ../app/src/snake.h
@@ -239,6 +240,7 @@ app/src/CMakeFiles/src.dir/functional.cpp.o: ../3dparty/SFML/include/SFML/Window
 app/src/CMakeFiles/src.dir/functional.cpp.o: ../3dparty/SFML/include/SFML/Window/WindowBase.hpp
 app/src/CMakeFiles/src.dir/functional.cpp.o: ../3dparty/SFML/include/SFML/Window/WindowHandle.hpp
 app/src/CMakeFiles/src.dir/functional.cpp.o: ../3dparty/SFML/include/SFML/Window/WindowStyle.hpp
+app/src/CMakeFiles/src.dir/functional.cpp.o: ../app/src/fruit.h
 app/src/CMakeFiles/src.dir/functional.cpp.o: ../app/src/functional.cpp
 app/src/CMakeFiles/src.dir/functional.cpp.o: ../app/src/functional.h
 
@@ -395,6 +397,7 @@ app/src/CMakeFiles/src.dir/snake.cpp.o: ../3dparty/SFML/include/SFML/Window/Wind
 app/src/CMakeFiles/src.dir/snake.cpp.o: ../3dparty/SFML/include/SFML/Window/WindowBase.hpp
 app/src/CMakeFiles/src.dir/snake.cpp.o: ../3dparty/SFML/include/SFML/Window/WindowHandle.hpp
 app/src/CMakeFiles/src.dir/snake.cpp.o: ../3dparty/SFML/include/SFML/Window/WindowStyle.hpp
+app/src/CMakeFiles/src.dir/snake.cpp.o: ../app/src/fruit.h
 app/src/CMakeFiles/src.dir/snake.cpp.o: ../app/src/functional.h
 app/src/CMakeFiles/src.dir/snake.cpp.o: ../app/src/snake.cpp
 app/src/CMakeFiles/src.dir/snake.cpp.o: ../app/src/snake.h
