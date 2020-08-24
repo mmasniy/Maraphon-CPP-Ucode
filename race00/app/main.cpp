@@ -46,13 +46,28 @@ void show_Show_LeaderBoard(sf::RenderWindow* window) {
 
 }
 int main(int argc, char** argv) {
+    if (argc != 3) {
+        std::cerr << USAGE << std::endl;
+        return EXIT_FAILURE;
+    }
+    int width;
+    int height;
 
-//    if (argc != 3) {
-//        std::cerr << USAGE << std::endl;
-//        return EXIT_FAILURE;
-//    }
+    try {
+       width = std::stoi(argv[1]);
+       height = std::stoi(argv[2]);
+       if ((width < 512 || width > 1024) && (height < 512 || height > 1024)) {
+           width = 1024;
+           height = 1024;
+       }
+    } catch (std::out_of_range& ex) {
+        std::cerr << "error input parameters, use dedaults\n" ;
+        width = 1024;
+        height = 1024;
+    };
 
-    sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(std::stoi(argv[1]), std::stoi(argv[2])), "snake-line", sf::Style::Titlebar);
+
+    sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode((width%4), (height%4)), "snake-line", sf::Style::Titlebar);
     Menu main(window, window->getSize().x, window->getSize().y);
     window->setTitle("SNAKE");
     window->setMouseCursorVisible(false);

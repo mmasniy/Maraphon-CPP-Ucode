@@ -13,7 +13,7 @@
 
 Menu ::Menu(sf::RenderWindow *_window, float width, float height) {
     window = _window;
-    if (!font.loadFromFile("resources/ArialBold.ttf")) { }
+    if (!font.loadFromFile("ArialBold.ttf")) { }
     int font_size = std::min(width, height) / 25;
 
     sf::Color font_color(255, 140, 0, 255);
