@@ -4,11 +4,13 @@
 
 class Fruit {
     public:
+//    Fruit();
     Fruit(sf::RenderWindow *window, sf::Vector2<int> direction, long long score_Fruit);
     void CreateFruit(sf::Vector2<int> direction);
-//    sf::RectangleShape GetFood();
     sf::Vector2<int> GetPositionFruit();
     void DrawFruit();
+    void SetPosition(sf::Vector2<int> direction);
+    sf::RectangleShape& GetFruitBody();
 
     private:
     long long score;

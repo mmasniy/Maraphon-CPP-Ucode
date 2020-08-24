@@ -12,8 +12,11 @@
 
 
 void game_start (sf::RenderWindow* window, Player& player) {
+    Fruit fruit(window, RandomFruitGenerate(window->getSize()), (1 + std::rand() % 50));
+    fruit.SetPosition(RandomFruitGenerate(window->getSize()));
+    fruit.DrawFruit();
     Game game
-        (window, sf::Color::Magenta, sf::Color::Cyan, player);
+        (window, sf::Color::Magenta, sf::Color::Cyan, player, fruit);
     game.Start();
 }
 

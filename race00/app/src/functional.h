@@ -9,4 +9,4 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include "fruit.h"
 
-sf::Vector2<int> RandomFruitGenerate(sf::Vector2<int> size_screen);
+sf::Vector2<int> RandomFruitGenerate(sf::Vector2<unsigned int> size_screen);
