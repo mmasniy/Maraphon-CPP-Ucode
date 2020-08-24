@@ -48,7 +48,6 @@ void Game::LoopIvent() {
     sf::Vector2<int> direction(-1, 0);
     bool flag = true;
     auto start = std::chrono::steady_clock::now();
-//    Fruit fruit_(screen, snake.GetNextLocationForFood(), (1 + std::rand() % 50));
     while (screen->isOpen() && flag) {
         LoadResources();
         sf::Event event{};
@@ -61,10 +60,6 @@ void Game::LoopIvent() {
                 snake.AddBoxToTail(direction);
             }
         }
-
-//        if (snake.AteFood(fruit)) {
-//
-//        }
         if(delay < 0.07) {
             Update_delay(delay);
         }
@@ -75,12 +70,6 @@ void Game::LoopIvent() {
             chrono.restart();
         }
 
-//        if(clear_chrono.getElapsedTime().asSeconds() > 0.2)
-//        {
-//            game.clearTrack();
-//            clear_chrono.restart();
-//        }
-//
         if(chrono_delete_snake.getElapsedTime().asSeconds() > 1) {
             seconds +=1;
             if(seconds == 4) {
