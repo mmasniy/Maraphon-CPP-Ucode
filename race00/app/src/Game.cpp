@@ -1,13 +1,17 @@
 #include "Game.h"
 #include "fruit.h"
-#include <stdlib.h>
+#include <cstdlib>
 #include <chrono>
+
+//sf::Clock::chrono;
 
 Game::Game(sf::RenderWindow *w,
            sf::Color colorHead,
            sf::Color colorBody,
-           Player &player_)
-    : snake(w, colorHead, colorBody), player(player_) {
+           Player &player_, Fruit& fruit)
+    : snake(w, colorHead, colorBody, fruit), player(player_) {
+    seconds = 0;
+    delay = 0.04;
     screen = w;
 }
 
@@ -43,10 +47,8 @@ void Game::LoopIvent() {
     player.score = 20;
     sf::Vector2<int> direction(-1, 0);
     bool flag = true;
+    auto start = std::chrono::steady_clock::now();
     while (screen->isOpen() && flag) {
-        Fruit fruit(screen, snake.GetNextLocationForFood(), (1 + (rand() % 50)));
-        fruit.CreateFruit(snake.GetNextLocationForFood());
-        fruit.DrawFruit();
         LoadResources();
         sf::Event event{};
         while (screen->pollEvent(event)) {
@@ -58,14 +60,30 @@ void Game::LoopIvent() {
                 snake.AddBoxToTail(direction);
             }
         }
-        if (snake.MoveSnake(direction)) {
-            flag = false;
+        if(delay < 0.07) {
+            Update_delay(delay);
         }
-        if (snake.AteFood(fruit)) {
-            fruit.CreateFruit(snake.GetNextLocationForFood());
-            fruit.DrawFruit();
+        if(chrono.getElapsedTime().asSeconds() > delay) {
+            if (snake.MoveSnake(direction) || snake.GetSnakeSize() < 2) {
+                flag = false;
+            }
+            chrono.restart();
         }
+
+        if(chrono_delete_snake.getElapsedTime().asSeconds() > 1) {
+            seconds +=1;
+            if(seconds == 4) {
+                seconds = 0;
+                snake.DeleteBox();
+            }
+            chrono_delete_snake.restart();
+        }
+        snake.DrawFruit();
         screen->display();
-        screen->setFramerateLimit(20);
     }
 }
+
+void Game::Update_delay(double &delay) {
+    delay = 0.00001 + ((snake.GetSnakeSize() - 1) * (0.003));
+}
+

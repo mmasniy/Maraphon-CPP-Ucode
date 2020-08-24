@@ -1,6 +1,7 @@
 #include "snake.h"
 #include <cstdlib>
 #include <random>
+#include <chrono>
 
 Block::Block(sf::Vector2<int> new_pos, sf::Color color) {
     box.setSize(sf::Vector2f(BOX_SIZE, BOX_SIZE));
@@ -36,10 +37,13 @@ sf::Vector2<int> Snake::GetNextLocationForFood() {
             }
         }
     }
-    return {-5000, -5000};
+    return {20, 20};
 }
 
-Snake::Snake(sf::RenderWindow *window, sf::Color colorH, sf::Color colorB) {
+Snake::Snake(sf::RenderWindow *window,
+             sf::Color colorH,
+             sf::Color colorB,
+             Fruit &fruit_) : fruit(fruit_) {
     snake_length = 4;
     movementScale = 40;
     screen = window;
@@ -95,25 +99,31 @@ void Snake::AddBoxToTail(sf::Vector2<int> direction) {
     body.push_back({{direction.x - 5000, direction.y - 5000}, colorBody});
 }
 
-bool Snake::AteFood(Fruit fd) {
-    if (fd.GetPositionFruit().x == body.front().GetPosition().x
-        && fd.GetPositionFruit().y == body.front().GetPosition().y) {
+bool Snake::AteFood() {
+    std::cout << "SIZE " << body.size() << std::endl;
+    if (fruit.GetFruitBody().getGlobalBounds().intersects(body.front().GetBox().getGlobalBounds())) {
         AddBoxToTail(body.back().GetPosition());
+//        fruit.SetPosition(GetNextLocationForFood());
+        std::cout << "fruit.GetPositionFruit() = x : " << std::endl;
         return true;
     }
+    std::cerr << "FFFFAAAAALLLLLLSSSSSSS" << std::endl;
     return false;
 }
-
-int Snake::SetFramerateLimit() {
-    int coefficient = body.size() / 10;
-    if (coefficient >= 2) {
-        FramerateLimit += 10;
-    } else if (coefficient >= 3) {
-        FramerateLimit += 5;
-    } else if (coefficient >= 4) {
-        FramerateLimit += 5;
-    } else if (coefficient >= 6) {
-        FramerateLimit += 10;
+int Snake::GetSnakeSize() {
+    return body.size();
+}
+void Snake::DeleteBox() {
+    body.pop_back();
+}
+void Snake::DrawFruit() {
+    std::cerr << "Start = " << fruit.GetPositionFruit().x << " " << fruit.GetPositionFruit().y << std::endl;
+    if (AteFood()) {
+        fruit.SetPosition(GetNextLocationForFood());
     }
-    return FramerateLimit;
+    std::cerr << "Finish = " << fruit.GetPositionFruit().x << " " << fruit.GetPositionFruit().y << std::endl;
+    fruit.DrawFruit();
+}
+Fruit &Snake::GetFruit() {
+    return fruit;
 }

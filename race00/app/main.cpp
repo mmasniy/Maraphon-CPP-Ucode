@@ -10,8 +10,11 @@
 #define USAGE "usage: ./race00 [width] [height]"
 
 void game_start (sf::RenderWindow* window, Player& player) {
+    Fruit fruit(window, RandomFruitGenerate(window->getSize()), (1 + std::rand() % 50));
+    fruit.SetPosition(RandomFruitGenerate(window->getSize()));
+    fruit.DrawFruit();
     Game game
-        (window, sf::Color::Magenta, sf::Color::Cyan, player);
+        (window, sf::Color::Magenta, sf::Color::Cyan, player, fruit);
     game.Start();
 }
 
@@ -56,14 +59,14 @@ int main(int argc, char** argv) {
     try {
        width = (std::stoi(argv[1])) % 4;
        height = (std::stoi(argv[2]))% 4;
-       if ((width < 512 || width > 1024) && (height < 512 || height > 1024)) {
-           width = 1024;
-           height = 1024;
+       if ((width < 1024 || width > 2840) && (height < 1024 || height > 5840)) {
+           width = 2840;
+           height = 1800;
        }
     } catch (std::out_of_range& ex) {
         std::cerr << "error input parameters, use dedaults\n" ;
-        width = 1024;
-        height = 1024;
+        width = 2840;
+        height = 1800;
     };
 
 

@@ -20,20 +20,28 @@ class Block {
 
 class Snake {
 public:
-    Snake(sf::RenderWindow *window, sf::Color colorHead, sf::Color colorBody);
+    Snake(sf::RenderWindow *window,
+          sf::Color colorH,
+          sf::Color colorB,
+          Fruit &fruit_);
     void DrawSnake();
     bool MoveSnake(sf::Vector2<int> direction);
     bool DiedSnake();
     void AddBoxToTail(sf::Vector2<int> direction);
     sf::Vector2<int> GetNextLocationForFood();
-    bool AteFood(Fruit fd);
-    int SetFramerateLimit();
+    bool AteFood();
+//    int SetFramerateLimit();
+    int GetSnakeSize();
+    void DeleteBox();
+    void DrawFruit();
+    Fruit& GetFruit();
 
 private:
     int FramerateLimit = 60;
     sf::RenderWindow *screen;
     float movementScale;
     int snake_length;
+    Fruit fruit;
 
     std::deque<Block> body;
     sf::Color colorBody;
