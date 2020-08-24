@@ -29,4 +29,7 @@ void Fruit::SetPosition(sf::Vector2<int> direction) {
     location = direction;
     food.setPosition(sf::Vector2f(direction.x, direction.y));
 }
+long long Fruit::GetScore() {
+    return score;
+}
 

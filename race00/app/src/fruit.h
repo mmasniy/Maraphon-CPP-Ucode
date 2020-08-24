@@ -11,6 +11,7 @@ class Fruit {
     void DrawFruit();
     void SetPosition(sf::Vector2<int> direction);
     sf::RectangleShape& GetFruitBody();
+    long long GetScore();
 
     private:
     long long score;

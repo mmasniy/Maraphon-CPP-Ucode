@@ -57,7 +57,7 @@ void Game::LoopIvent() {
             if (event.key.code == sf::Keyboard::Escape) {
                 screen->close();
             } else if (event.key.code == sf::Keyboard::Space) {
-                player.score += 5;
+                player.score += snake.GetFruit().GetScore();
                 snake.AddBoxToTail(direction);
             }
         }
