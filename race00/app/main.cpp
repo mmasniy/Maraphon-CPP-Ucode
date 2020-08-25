@@ -33,7 +33,6 @@ void show_Show_LeaderBoard(sf::RenderWindow* window, Menu& main) {
 
         auto it = main.score_table.rbegin();
         for (int i = 0; i < 10 && it != main.score_table.rend(); ++i, ++it) {
-//            std::cout << "map == " << (it->first) << " : " << it->second << std::endl;
             std::string temp = std::to_string(it->first);
             text.setString(temp + " : " + it->second);
             text.setPosition(100 , 100 * i + 100);

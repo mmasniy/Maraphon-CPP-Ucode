@@ -42,3 +42,4 @@ t??/build/*
 t??/src/build/*
 # cmake-build-debug
 #library
+race00/cmake-build-debug
