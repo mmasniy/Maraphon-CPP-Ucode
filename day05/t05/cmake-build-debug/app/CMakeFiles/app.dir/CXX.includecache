@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/main.cpp
+iostream
+-
+src/Werewolf.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/src/Werewolf.h
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/src/Creature.h
+iostream
+-
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/src/Human.h
+Creature.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/src/Creature.h
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/src/Werewolf.h
+Creature.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/src/Creature.h
+Human.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/src/Human.h
+Wolf.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/src/Wolf.h
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/src/Wolf.h
+Creature.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t05/app/src/Creature.h
+
