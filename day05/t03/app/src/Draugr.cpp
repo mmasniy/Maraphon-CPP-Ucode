@@ -12,17 +12,17 @@ Draugr::Draugr(double health, int frostResist)
             << "% frost resist was born!" << std::endl;
 }
 
-Draugr::Draugr(Draugr& other) : m_frostResist(other.m_frostResist){
-    m_health = other.m_health;
+//Draugr::Draugr(Draugr& other) : m_frostResist(other.m_frostResist){
+//    m_health = other.m_health;
 //    std::cout << "Draugr with " << m_health <<" health and " << m_frostResist
 //              << "% frost resist was born!" << std::endl;
 //    std::cout << "Copy constructor was called" << std::endl;
-}
+//}
 
-Draugr::Draugr(Draugr&& other) : Draugr (std::move(other.m_health),
-                                            std::move(other.m_frostResist)) {
+//Draugr::Draugr(Draugr&& other) : Draugr (std::move(other.m_health),
+//                                            std::move(other.m_frostResist)) {
 //    std::cout << "Move constructor was called" << std::endl;
-}
+//}
 
 void Draugr::setName(const std::string&& name) {
     m_name = name;

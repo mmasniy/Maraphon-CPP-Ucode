@@ -8,8 +8,8 @@ class Draugr {
     Draugr();
     explicit Draugr(int frostResist);
     explicit Draugr(double health, int frostResist = 50);
-    explicit Draugr(Draugr& other);
-    explicit Draugr(Draugr&& other);
+    explicit Draugr(Draugr& other) = delete;
+    explicit Draugr(Draugr&& other) = delete;
     void shoutPhrase(int shoutNumber) const;
     void setName(const std::string&& name);
 
