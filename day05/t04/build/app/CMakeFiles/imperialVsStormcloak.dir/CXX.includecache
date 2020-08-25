@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/main.cpp
+iostream
+-
+src/StormcloakSoldier.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/StormcloakSoldier.h
+src/ImperialSoldier.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/ImperialSoldier.h
+src/Axe.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Axe.h
+src/Sword.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Sword.h
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Axe.h
+Weapon.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Weapon.h
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/ImperialSoldier.h
+iostream
+-
+Soldier.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Soldier.h
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Soldier.h
+iostream
+-
+Weapon.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Weapon.h
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/StormcloakSoldier.h
+Soldier.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Soldier.h
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Sword.h
+Weapon.h
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Weapon.h
+
+/Users/mmasniy/Desktop/Maraphon-CPP-Ucode/day05/t04/app/src/Weapon.h
+

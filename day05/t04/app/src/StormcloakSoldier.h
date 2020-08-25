@@ -1,17 +1,9 @@
 #pragma once
-#include "ImperialSoldier.h"
-#include "Axe.h"
+#include "Soldier.h"
 
 class ImperialSoldier;
-class StormcloakSoldier final {
+class StormcloakSoldier : public Soldier {
     public:
-    StormcloakSoldier();
-    ~StormcloakSoldier();
-    void setWeapon(Axe *sword);
-    void attack(ImperialSoldier &enemy);
-    void consumeDamage(int amount);
-    int getHealth() const;
-    private:
-    Axe *m_weapon{};
-    int m_health;
+    StormcloakSoldier(std::string&& name);
+    ~StormcloakSoldier() override;
 };

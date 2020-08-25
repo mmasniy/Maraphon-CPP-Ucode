@@ -1,17 +1,10 @@
 #pragma once
 #include <iostream>
-#include "StormcloakSoldier.h"
-#include "Sword.h"
-class StormcloakSoldier;
-class ImperialSoldier final {
+#include "Soldier.h"
+
+class ImperialSoldier final : public Soldier {
     public:
-    ImperialSoldier();
-    ~ImperialSoldier();
-    void setWeapon(Sword *sword);
-    void attack(StormcloakSoldier &enemy);
+    ImperialSoldier(std::string&& name);
+    ~ImperialSoldier() override;
     void consumeDamage(int amount);
-    int getHealth() const;
-    private:
-    Sword* m_weapon;
-    int m_health;
 };

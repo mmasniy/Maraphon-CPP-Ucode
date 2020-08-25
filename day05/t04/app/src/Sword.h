@@ -1,10 +1,7 @@
 #pragma once
+#include "Weapon.h"
 
-class Sword final {
+class Sword final : public Weapon {
     public:
-    Sword(int damage);
-    int getDamage() const;
-
-    private:
-    const int m_damage;
+    Sword(int demage);
 };

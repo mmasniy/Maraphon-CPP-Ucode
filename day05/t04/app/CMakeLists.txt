@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(app_project LANGUAGES CXX)
+project(imperialVsStormcloak LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(SOURCE_EXE main.cpp)
 add_subdirectory(src)
@@ -14,5 +14,5 @@ add_compile_options(
         -Wno-unused-parameter
 )
 
-add_executable(app ${SOURCE_EXE})
-target_link_libraries(app src)
+add_executable(imperialVsStormcloak ${SOURCE_EXE})
+target_link_libraries(imperialVsStormcloak src)
