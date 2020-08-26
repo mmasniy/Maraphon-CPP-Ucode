@@ -1,7 +1,11 @@
 #pragma once
+
+#include "Spells.h"
+
 #include <iostream>
 #include <set>
-#include "Spells.h"
+#include <algorithm>
+
 
 namespace Creatures {
 class Creature {
@@ -22,7 +26,18 @@ class Creature {
     int m_mana;
     std::set<Spells::ISpell *> m_spells;
 };
-
 }
+
+class Imperial : public Creatures::Creature {
+    public:
+    Imperial(std::string &&name);
+    void sayPhrase() const override;
+};
+
+class Redguard : public Creatures::Creature {
+    public:
+    Redguard(std::string &&name);
+    void sayPhrase() const override;
+};
 
 std::ostream& operator<<(std::ostream& os, const Creatures::Creature& creature);

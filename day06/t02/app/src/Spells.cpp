@@ -29,7 +29,7 @@ bool Equilibrium::cast(Creatures::Creature &owner, Creatures::Creature &other) {
 
 bool Flames::cast(Creatures::Creature &owner, Creatures::Creature &other) {
     if (owner.getMana() >= 14) {
-        other.setHealth(owner.getHealth() - 8);
+        other.setHealth(other.getHealth() - 8);
         owner.setMana(owner.getMana() - 14);
         return true;
     }
@@ -41,7 +41,7 @@ bool Flames::cast(Creatures::Creature &owner, Creatures::Creature &other) {
 
 bool Freeze::cast(Creatures::Creature &owner, Creatures::Creature &other) {
     if (owner.getMana() >= 30) {
-        other.setHealth(owner.getHealth() - 20);
+        other.setHealth(other.getHealth() - 20);
         owner.setMana(owner.getMana() - 30);
         return true;
     }
@@ -53,7 +53,7 @@ bool Freeze::cast(Creatures::Creature &owner, Creatures::Creature &other) {
 
 bool Fireball::cast(Creatures::Creature &owner, Creatures::Creature &other) {
     if (owner.getMana() >= 50) {
-        other.setHealth(owner.getHealth() - 40);
+        other.setHealth(other.getHealth() - 40);
         owner.setMana(owner.getMana() - 50);
         return true;
     }
@@ -84,3 +84,6 @@ Spells::SpellType Fireball::getType() const {
     return Spells::SpellType::Fireball;
 }
 
+bool operator==(Spells::ISpell &lhs, Spells::ISpell &rhs) {
+    return lhs.getType() == rhs.getType();
+}
