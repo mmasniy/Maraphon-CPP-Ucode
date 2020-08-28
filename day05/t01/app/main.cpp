@@ -19,27 +19,33 @@ void CheckArg(T argv) {
 }
 
 void DraugrShout(Draugr* draugr, char** argv, int argc) {
-    if (argc == 2) {
-        draugr = new Draugr;
-        draugr->shoutPhrase(std::stoi(argv[1]));
-    } else if (argc == 3) {
-        CheckArg(std::string(argv[2]));
-        Draugr* second = new Draugr(std::stod(argv[2]));
-        second->shoutPhrase(std::stoi(argv[1]));
-        draugr = new Draugr(std::stoi(argv[2]));
-        draugr->shoutPhrase(std::stoi(argv[1]));
-        delete second;
-    } else if (argc == 4) {
-        CheckArg(std::string(argv[2]));
-        CheckArg(std::string(argv[3]));
-        draugr = new Draugr(std::stod(argv[2]), std::stoi(argv[3]));
-        draugr->shoutPhrase(std::stoi(argv[1]));
+    try {
+        if (argc == 2) {
+            draugr = new Draugr;
+            draugr->shoutPhrase(std::stoi(argv[1]));
+        } else if (argc == 3) {
+            CheckArg(std::string(argv[2]));
+            Draugr *second = new Draugr(std::stod(argv[2]));
+            second->shoutPhrase(std::stoi(argv[1]));
+            draugr = new Draugr(std::stoi(argv[2]));
+            draugr->shoutPhrase(std::stoi(argv[1]));
+            delete second;
+        } else if (argc == 4) {
+
+            CheckArg(std::string(argv[2]));
+            CheckArg(std::string(argv[3]));
+            draugr = new Draugr(std::stod(argv[2]), std::stoi(argv[3]));
+            draugr->shoutPhrase(std::stoi(argv[1]));
+        }
+        delete draugr;
     }
-    delete draugr;
+    catch (...) {
+        throw(std::out_of_range("Error"));
+    }
 }
 
 int main(int argc, char** argv) {
-    if (argc > 4) {
+    if (argc > 4 || argc < 2) {
         std::cerr << "usage: ./draugr [shoutNumber] [health] [frostResist]" << std::endl;
         return 1;
     }

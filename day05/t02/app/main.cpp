@@ -59,7 +59,9 @@ int main(int argc, char** argv) {
             second->setName(std::move(names[1]));
             second->shoutPhrase(std::stoi(argv[1]));
         }
-    } catch (std::exception &e) {
+    } catch (std::out_of_range &){
+        std::cerr << "Error" << std::endl;
+    }catch (std::exception &e) {
         std::cerr << e.what() << std::endl;
         return 1;
     }

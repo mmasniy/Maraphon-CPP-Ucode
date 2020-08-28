@@ -1,221 +1,235 @@
+#include "Vector.h"
+
+#include "algorithmUtils.h" 
+
 #include <string>
-#include "src/Vector.h"
-#include <vector>
+#include <iostream>
 #include <cassert>
 
-using namespace CBL;
-
-template<typename T>
-void Print(T &container) {
-    for (const auto &item : container) {
-        std::cout << item << " ";
-    }
-    std::cout << std::endl;
+struct Drums final { 
+	int badum; 
+	double tss; 
+};
+ 
+bool operator==(const Drums& lhs, const Drums& rhs) 
+{
+    return lhs.badum == rhs.badum && lhs.tss == rhs.tss; 
 }
 
-static bool CheckConstructors() {
-    std::cout << "========CheckConstructors========" << std::endl;
-//    {
-//        Vector<int> v = {1, 2, 3};
-//        Vector<int> v1({1, 2, 3});
-//    }
-    {
-        Vector<int> v(4);
-    }
-//    std::cout << "111111" << std::endl;
-    {
-        Vector<int> v(10, 2);
-    }
-//    std::cout << "222222" << std::endl;
-//    {
-//        Vector<int> v = {1, 2, 3};
-//        Vector<int> v1(v);
-//        Vector<int> v2(v.begin(), v.end());
-//    }
-    std::cout << "================================\n\n" << std::endl;
-    return true;
-}
+int main() {
+	{
+		CBL::Vector<int> v{ 2, 3, 4, 5 };
 
-static bool CheckOperators() {
-    {
-        Vector<std::string> v(2, "alice");
-        Vector<std::string> v1(1, "bob returns");
-        std::cout << "OPERATION CHECK" << std::endl;
-        std::cout << (v < v1) << std::endl;
-        std::cout << "OPERATION CHECK END\n\n" << std::endl;
-    }
-    return true;
-}
+		auto i = 2;
+		for (auto& item : v) {
+			assert(i == item);
+			++i;
+		}
 
-//static bool EraseCheck() {
-//    {
-//        std::cout << "ERASE CHECK" << std::endl;
-//        Vector<int> v({1, 2, 3});
-//        std::vector<int> s({1, 2, 3});
-//        std::cout << *v.erase(v.begin(), v.end() - 1) << std::endl;
-//        Print(v);
-//        std::cout << "=====================" << std::endl;
-//        std::cout << *s.erase(s.begin(), s.end() - 1) << std::endl;
-//        Print(s);
-//        std::cout << "ERASE CHECK END" << std::endl;
-//    }
-//    return true;
-//}
+		assert(*v.begin() == 2);
+		assert(*(v.end() - 1) == 5);
 
-static bool ClearCheck() {
-    {
-        std::cout << "CLEAR CHECK" << std::endl;
-        Vector<int> v({1, 2, 3});
-        std::vector<int> s({1, 2, 3});
-        v.clear();
-        s.clear();
-        std::cout << v.size() << " " << v.capacity() << std::endl;
-        std::cout << "================================" << std::endl;
-        std::cout << s.size() << " " << s.capacity() << std::endl;
-        std::cout << "CLEAR CHECK END\n\n" << std::endl;
-    }
-    return true;
-}
+		assert(v.size() == 4);
+		assert(v.capacity() >= 4);
+		assert(!v.isEmpty());
 
-//static bool PushCheck() {
-//    {
-//        std::cout << "PUSH CHECK" << std::endl;
-//        Vector<int> v({1, 2, 3});
-//        std::vector<int> s({1, 2, 3});
-//        v.push_back(1);
-//        v.push_back(2);
-//        v.push_back(3);
-//        s.push_back(1);
-//        s.push_back(2);
-//        s.push_back(3);
-//        Print(v);
-//        std::cout << "================================" << std::endl;
-//        Print(s);
-//        std::cout << "PUSH CHECK END" << std::endl;
-//    }
-//    return true;
-//}
+		std::cout << "Simple vector OK" << std::endl;
+	}
 
-//static bool PopCheck() {
-//    {
-//        std::cout << "POP CHECK" << std::endl;
-//        Vector<int> v({1, 2, 3});
-//        std::vector<int> s({1, 2, 3});
-//        v.pop_back();
-//        v.pop_back();
-//        s.pop_back();
-//        s.pop_back();
-//        Print(v);
-//        std::cout << "================================" << std::endl;
-//        Print(s);
-//        std::cout << "POP CHECK END" << std::endl;
-//    }
-//    return true;
-//}
+	{
+		CBL::Vector<double> v;
 
-static bool AccsessCheck() {
-    {
-        std::cout << "ACCSESS CHECK" << std::endl;
-        Vector<int> v({1, 2, 3});
-        std::vector<int> s({1, 2, 3});
-//        std::cout << "1:" << v[0] << " 2:" << v.at(1) << std::endl;
-//        v[0] = 11; v.at(1) = 22;
-//        std::cout << "1:" << v[0] << " 2:" << v.at(1) << std::endl;
-        std::cout << "================================" << std::endl;
-//        std::cout << "1:" << s[0] << " 2:" << s.at(1) << std::endl;
-        s[0] = 11; s.at(1) = 22;
-        std::cout << "1:" << s[0] << " 2:" << s.at(1) << std::endl;
+		for (auto i = 1; i < 4; ++i) {
+			v.push_back(i);
+		}
 
-    }
-    {
-        std::cout << "CHECK AT EXCEPTION" << std::endl;
-        try {
-            Vector<int> v({1, 2, 3});
-            v.at(123);
-        }
-        catch (std::exception&e ) {
-            std::cout << e.what() << std::endl;
-        }
-    }
-    std::cout << "ACCSESS CHECK END" << std::endl;
-    return true;
-}
+        auto cpy = v;
+		assert(cpy.size() == v.size());
 
-static bool EmptyCheck() {
-    {
-        std::cout << "EMPTY CHECK" << std::endl;
-        Vector<int> v;
-        std::vector<int> s;
-        std::cout << v.isEmpty() << v.size() << std::endl;
-        std::cout << "================================" << std::endl;
-        std::cout << s.empty() << s.size() << std::endl;
-        std::cout << "EMPTY CHECK END" << std::endl;
-    }
-    return true;
-}
+		for (size_t i = 0; i < cpy.size(); ++i) {
+			assert(cpy[i] == v[i]);
+		}
 
-bool ReserveCheck() {
-    {
-        std::cout << "RESERVE CHECK" << std::endl;
-        Vector<int> v;
-        std::vector<int> s;
-        v.reserve(10);
-        s.reserve(10);
-        std::cout << v.capacity() << " " << v.size() << std::endl;
-        std::cout << "================================" << std::endl;
-        std::cout << s.capacity() << " " << s.size() << std::endl;
-        std::cout << "RESERVE CHECK END" << std::endl;
-    }
-    return true;
-}
+		assert(v == cpy);
 
-bool ResizeCheck() {
-    {
-        std::cout << "RESIZE CHECK" << std::endl;
-        Vector<int> v;
-        std::vector<int> s;
-        v.resize(10);
-        s.resize(10);
-        std::cout << v.capacity() << " " << v.size() << std::endl;
-        Print(v);
-        std::cout << "================================" << std::endl;
-        std::cout << s.capacity() << " " << s.size() << std::endl;
-        Print(s);
-        std::cout << "RESIZE CHECK END" << std::endl;
-    }
-    return true;
-}
+		cpy.push_back(3.14);
 
-//static bool InsertCheck() {
-//    {
-//        std::cout << "INSERT CHECK" << std::endl;
-//        Vector<int> v({1, 2, 3});
-//        std::vector<int> s({1, 2, 3});
-//        v.insert(v.begin(), 11);
-//        v.insert(v.begin() + 2, 22);
-//        v.insert(v.begin() + 4, 44);
-//        s.insert(s.begin(), 11);
-//        s.insert(s.begin() + 2, 22);
-//        s.insert(s.begin() + 4, 44);
-//        Print(v);
-//        std::cout << "================================" << std::endl;
-//        Print(s);
-//        std::cout << "INSERT CHECK END" << std::endl;
-//    }
-//    return true;
-//}
+		assert(v != cpy);
+		assert(v < cpy);
+		assert(!(v > cpy));
+		assert(v <= cpy);
+		assert(!(v >= cpy));
 
-int main(int argc, char *argv[]) {
-    CheckConstructors();
-    CheckOperators();
-//    EraseCheck();
-    ClearCheck();
-//    PushCheck();
-//    InsertCheck();
-//    PopCheck();
-    AccsessCheck();
-    EmptyCheck();
-    ReserveCheck();
-    ResizeCheck();
-    return 0;
+		std::cout << "Vectors copy and comparsion OK" << std::endl;
+	}
+
+	{
+		CBL::Vector<std::string> v(10);
+
+		v.clear();
+
+		assert(v.size() == 0);
+		assert(v.isEmpty());
+
+		std::cout << "Clear OK" << std::endl;
+	}
+
+	{
+		CBL::Vector<std::string> v(10, "VAR");
+		for (auto& item : v) {
+			assert(item == "VAR");
+		}
+
+		v.pop_back();
+
+		assert(v.size() == 9);
+
+		std::cout << "Constructor and pop OK" << std::endl;
+	}
+
+	{
+		CBL::Vector<float> v{1.1f, 2.2f, 3.3f, 4.4f, 5.5f};
+
+		auto cpy = CBL::Vector<float>(v.begin(), v.end());
+
+		assert(cpy == v);
+
+		assert(cpy[2] == 3.3f);
+
+		std::cout << "Iterator construction OK" << std::endl;
+	}
+	{
+		CBL::Vector<char> v{ 'a', 'b', 'c', 'd', 'e' };
+		auto insIt = v.insert(v.begin() + 2, 'z');
+		assert(*insIt == 'z');
+		insIt = v.insert(v.end(), 'k');
+		assert(*insIt == 'k');
+		auto ersIt = v.erase(v.begin() + 2);
+		assert(*ersIt == 'c');
+		ersIt = v.erase(v.begin(), v.end());
+		assert(!ersIt);
+		assert(v.size() == 0);
+		assert(v.isEmpty());
+		std::cout << "Iterator insertion and removal OK" << std::endl;
+	}
+
+	CBL::Vector<int> vecOfInts { 1, 2, 3, 4, 5, 5 };
+	CBL::Vector<std::string> vecOfStrings { "a", "b", "c", "d", "e" };
+	CBL::Vector<float> vecOfFloats { 0.1f, 0.2f, 0.3f, 0.4f, 0.5f, 0.5f };
+	CBL::Vector<Drums> vecOfMoms {
+		Drums{ 10, 6.6 },
+		Drums{ 100, 666.6 },
+		Drums{ 100, 999.9 },
+		Drums{ 9000, 2000.05 },
+		Drums{ 100500, 0.3 }
+	};
+
+	// Find
+	{
+		auto it = Utils::Find(vecOfInts, 3);
+		assert(it != vecOfInts.end() && *it == 3);
+	}
+	assert(Utils::Find(vecOfInts, 10) == vecOfInts.end());
+
+	// FindIf
+	{
+		auto findIf = vecOfMoms;
+		auto it = Utils::FindIf(vecOfMoms, [](Drums mom){
+			return mom.tss == 0.3;
+		});
+		assert(it != vecOfMoms.end() && it->tss == 0.3);
+	}
+	auto findIf = vecOfMoms;
+	assert(Utils::FindIf(vecOfMoms, [](Drums mom){
+		return mom.tss == 3.14;
+	}) == vecOfMoms.end());
+
+	// RemoveAll
+	auto remAll = vecOfInts;
+	Utils::RemoveAll(remAll, 3);
+	assert(Utils::Find(remAll, 3) == remAll.end());
+
+	// RemoveAllIf
+	auto remAllIf = vecOfMoms;
+	Utils::RemoveAllIf(remAllIf, [](Drums mom){
+		return mom.badum == 9000;
+	});
+	assert(Utils::FindIf(remAllIf, [](Drums mom){
+		return mom.badum == 9000;
+	}) == remAllIf.end());
+
+	// Contains
+	assert(Utils::Contains(vecOfStrings, "b"));
+	assert(!Utils::Contains(vecOfStrings, "f"));
+
+	// ContainsIf
+	assert(Utils::ContainsIf(vecOfMoms, [](Drums mom){
+		return mom.badum == 100;
+	}));
+	assert(!Utils::ContainsIf(vecOfMoms, [](Drums mom){
+		return mom.badum == 7;
+	}));
+
+	// CountIf
+	assert(Utils::CountIf(vecOfMoms, [](Drums mom){
+		return mom.badum == 100;
+	}) == 2);
+	assert(Utils::CountIf(vecOfMoms, [](Drums mom){
+		return mom.badum == 0;
+	}) == 0);
+
+	CBL::Vector<int> unsorted { 4, 7, 2, 0, -1, 60, 20, -1, 7 };
+
+	// Sort
+	{
+		auto srt = unsorted;
+		Utils::Sort(unsorted);
+		assert(std::is_sorted(unsorted.begin(), unsorted.end()));
+	}
+	{
+		auto srt = unsorted;
+		Utils::Sort(unsorted, [](int lhs, int rhs){
+			return lhs > rhs;
+		});
+		assert(std::is_sorted(unsorted.begin(), unsorted.end(), [](int lhs, int rhs){
+			return lhs > rhs;
+		}));
+	}
+
+	// Unique
+	{
+		auto unVec = vecOfInts;
+		Utils::Unique(unVec);
+		assert(unVec.size() != vecOfInts.size());
+	}
+	{
+		auto unVec = vecOfMoms;
+		Utils::Unique(unVec, [](Drums lhs, Drums rhs){
+			return lhs.badum == rhs.badum;
+		});
+		assert(unVec.size() != vecOfMoms.size());
+	}
+
+	// ForEach
+	auto lstForEach = vecOfStrings;
+	Utils::ForEach(lstForEach, [](std::string& str){
+		str.append("_lol");
+	});
+	assert(Utils::CountIf(lstForEach, [](std::string str){
+		return str.find("_lol") != std::string::npos;
+	}) == lstForEach.size());
+
+	// IndexOf
+	assert(Utils::IndexOf(vecOfInts, 1) == 0);
+	assert(Utils::IndexOf(vecOfFloats, 0.3f) == 2);
+
+	// IndexOfIf
+	assert(Utils::IndexOfIf(vecOfMoms, [](Drums mom){
+		return mom.badum == 10;
+	}) == 0);
+	assert(Utils::IndexOfIf(vecOfMoms, [](Drums mom){
+		return mom.badum == 9000;
+	}) == 3);
+
+	return 0;
 }

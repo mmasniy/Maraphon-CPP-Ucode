@@ -1,8 +1,10 @@
 #include "Draugr.h"
 
 Draugr::Draugr() : m_health(100), m_frostResist(50) {
+
 }
 void Draugr::shoutPhrase(int shoutNumber) const {
+    std::cout << "Draugr (100 health, 50% frost resist) shouts:" << std::endl;
     switch (shoutNumber) {
         case 0:
             std::cout << "Qiilaan Us Dilon!" << std::endl;
