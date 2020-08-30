@@ -1,5 +1,5 @@
-#include "Serializer.h"
-#include "SomeClass.h"
+#include "src/Serializer.h"
+#include "src/SomeClass.h"
 
 void deserialize(const std::string &path) {
     Serializer ser;

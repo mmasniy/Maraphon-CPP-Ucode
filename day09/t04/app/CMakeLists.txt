@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(simpleWorkerV1 LANGUAGES CXX)
+project(simpleWorkerV3 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(SOURCE_EXE main.cpp)
 add_subdirectory(src)
@@ -14,5 +14,5 @@ add_compile_options(
         -Wno-unused-parameter
 )
 
-add_executable(simpleWorkerV1 ${SOURCE_EXE})
-target_link_libraries(simpleWorkerV1 src)
+add_executable(simpleWorkerV3 ${SOURCE_EXE})
+target_link_libraries(simpleWorkerV3 src)

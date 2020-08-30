@@ -1,5 +1,4 @@
 #include "src/Worker.h"
-#include "src/TestClass.h"
 #include <string>
 #include <iostream>
 #include <regex>

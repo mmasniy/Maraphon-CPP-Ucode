@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(simpleWorkerV1 LANGUAGES CXX)
+project(classWithAtomic LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(SOURCE_EXE main.cpp)
 add_subdirectory(src)
@@ -14,5 +14,5 @@ add_compile_options(
         -Wno-unused-parameter
 )
 
-add_executable(simpleWorkerV1 ${SOURCE_EXE})
-target_link_libraries(simpleWorkerV1 src)
+add_executable(classWithAtomic ${SOURCE_EXE})
+target_link_libraries(classWithAtomic src)
